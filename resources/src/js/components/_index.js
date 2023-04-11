@@ -1,5 +1,5 @@
 // import './burger'
-// import './swiper'
+import './swiper'
 // import './sliders'
 // import './fixedMenu'
 //import './scroll'

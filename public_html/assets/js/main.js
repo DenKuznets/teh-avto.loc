@@ -24,10 +24,13 @@ const t=t=>"object"==typeof t&&null!==t&&t.constructor===Object&&"[object Object
 /*!***********************************************!*\
   !*** ./resources/src/js/components/_index.js ***!
   \***********************************************/
-/***/ (function() {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./swiper */ "./resources/src/js/components/swiper.js");
 // import './burger'
-// import './swiper'
+
 // import './sliders'
 // import './fixedMenu'
 //import './scroll'
@@ -36,6 +39,157 @@ const t=t=>"object"==typeof t&&null!==t&&t.constructor===Object&&"[object Object
 //import './animate'
 // import './pop-ap-services'
 // import './antispam'
+
+/***/ }),
+
+/***/ "./resources/src/js/components/swiper.js":
+/*!***********************************************!*\
+  !*** ./resources/src/js/components/swiper.js ***!
+  \***********************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
+/* harmony import */ var swiper_css_bundle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! swiper/css/bundle */ "./node_modules/swiper/swiper-bundle.min.css");
+
+
+
+//certificates SWIPER
+if (document.querySelector(".mySwiper")) {
+  var swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".mySwiper", {
+    // Optional parameters
+    // direction: "vertical",
+    // loop: true,
+    slidesPerView: 4,
+    // modules: [Navigation],
+    spaceBetween: 30,
+    // If we need pagination
+    // pagination: {
+    //   el: ".swiper-pagination",
+    // },
+
+    // Navigation arrows
+    // navigation: {
+    //     nextEl: ".swiper-button-next",
+    //     prevEl: ".swiper-button-prev",
+    // },
+
+    // And if we need scrollbar
+    scrollbar: {
+      el: ".swiper-scrollbar"
+    },
+    breakpoints: {
+      1919: {
+        slidesPerView: 4,
+        spaceBetween: 30
+      },
+      780: {
+        slidesPerView: 3,
+        spaceBetween: 50
+      },
+      700: {
+        slidesPerView: 2.4,
+        spaceBetween: 50
+      },
+      450: {
+        slidesPerView: 1.5,
+        spaceBetween: 50
+      },
+      359: {
+        spaceBetween: 50,
+        slidesPerView: 1.2
+      },
+      1: {
+        slidesPerView: 1
+      }
+    }
+  });
+}
+
+// Слайдер на первом экране
+if (document.querySelector(".firstScreenSwiper")) {
+  var _swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".firstScreenSwiper", {
+    modules: [swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation],
+    allowTouchMove: true,
+    spaceBetween: 10,
+    slidesPerView: 1.1,
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+    breakpoints: {
+      541: {
+        slidesPerView: 1,
+        loop: false
+      }
+    }
+  });
+}
+if (document.querySelector(".aboutSwiper")) {
+  var swiperAbout = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".aboutSwiper", {
+    modules: [swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation],
+    allowTouchMove: true,
+    slidesPerView: 1.1,
+    spaceBetween: 10,
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+    breakpoints: {
+      541: {
+        slidesPerView: 1,
+        loop: false
+      }
+    }
+  });
+}
+if (document.querySelector(".projectSwiper")) {
+  var swiperProject = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".projectSwiper", {
+    modules: [],
+    spaceBetween: 30,
+    // autoHeight: true,
+    allowTouchMove: true,
+    slidesPerView: 3,
+    loop: true,
+    breakpoints: {
+      320: {
+        slidesPerView: 1.1
+      },
+      481: {
+        slidesPerView: 2.1
+      },
+      1024: {
+        slidesPerView: 3,
+        loop: false
+      }
+    }
+  });
+}
+if (document.querySelector(".newsSwiper")) {
+  var _swiperProject = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".newsSwiper", {
+    modules: [],
+    spaceBetween: 30,
+    // autoHeight: true,
+    allowTouchMove: true,
+    slidesPerView: 3,
+    loop: true,
+    breakpoints: {
+      320: {
+        slidesPerView: 1.1
+      },
+      705: {
+        slidesPerView: 2.1
+      },
+      1200: {
+        slidesPerView: 3,
+        loop: false
+      }
+    }
+  });
+}
 
 /***/ }),
 
@@ -91,12 +245,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_11__);
 /* harmony import */ var _plugins_index__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./plugins/_index */ "./resources/src/js/plugins/_index.js");
 /* harmony import */ var _components_index__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/_index */ "./resources/src/js/components/_index.js");
-/* harmony import */ var _components_index__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_components_index__WEBPACK_IMPORTED_MODULE_13__);
 /* harmony import */ var _init__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./init */ "./resources/src/js/init.js");
 /* harmony import */ var imask__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! imask */ "./node_modules/imask/esm/index.js");
 /* harmony import */ var ymaps__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ymaps */ "./node_modules/ymaps/dist/ymaps.esm.js");
-/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
-/* harmony import */ var swiper_css_bundle__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! swiper/css/bundle */ "./node_modules/swiper/swiper-bundle.min.css");
 
 
 
@@ -120,58 +271,8 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 // import "./index.scss";
 
 
-
+// import Swiper, { Navigation, Pagination } from "swiper";
 // import styles bundle
-
-
-// SWIPER
-var swiper = new swiper__WEBPACK_IMPORTED_MODULE_17__["default"](".swiper", {
-  // Optional parameters
-  // direction: "vertical",
-  // loop: true,
-  slidesPerView: 4,
-  // modules: [Navigation],
-  spaceBetween: 30,
-  // If we need pagination
-  // pagination: {
-  //   el: ".swiper-pagination",
-  // },
-
-  // Navigation arrows
-  // navigation: {
-  //     nextEl: ".swiper-button-next",
-  //     prevEl: ".swiper-button-prev",
-  // },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar"
-  },
-  breakpoints: {
-    1919: {
-      slidesPerView: 4
-    },
-    780: {
-      slidesPerView: 3,
-      spaceBetween: 50
-    },
-    700: {
-      slidesPerView: 2.4,
-      spaceBetween: 50
-    },
-    450: {
-      slidesPerView: 1.5,
-      spaceBetween: 50
-    },
-    359: {
-      spaceBetween: 50,
-      slidesPerView: 1.2
-    },
-    1: {
-      slidesPerView: 1
-    }
-  }
-});
 
 // нажатие кнопки Оставить заявку на главной
 var heroBtn = document.getElementById("hero-btn");

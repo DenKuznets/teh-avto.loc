@@ -3,7 +3,7 @@
       <div class="certificate__content">
 
         <h2>Сертификаты</h2>
-        <div class="swiper">
+        <div class="mySwiper">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
@@ -33,7 +33,7 @@
           <div class="swiper-button-next green"></div> -->
 
           <!-- If we need scrollbar -->
-          <div class="swiper-scrollbar"></div>
+          <!-- <div class="swiper-scrollbar"></div> -->
         </div>
       </div>
     </section>

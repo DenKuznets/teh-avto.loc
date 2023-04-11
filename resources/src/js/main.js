@@ -6,59 +6,9 @@ import './init'
 // import "./index.scss";
 import IMask from "imask";
 import ymaps from "ymaps";
-import Swiper, { Navigation, Pagination } from "swiper";
+// import Swiper, { Navigation, Pagination } from "swiper";
 // import styles bundle
-import "swiper/css/bundle";
 
-// SWIPER
-const swiper = new Swiper(".swiper", {
-    // Optional parameters
-    // direction: "vertical",
-    // loop: true,
-    slidesPerView: 4,
-    // modules: [Navigation],
-    spaceBetween: 30,
-
-    // If we need pagination
-    // pagination: {
-    //   el: ".swiper-pagination",
-    // },
-
-    // Navigation arrows
-    // navigation: {
-    //     nextEl: ".swiper-button-next",
-    //     prevEl: ".swiper-button-prev",
-    // },
-
-    // And if we need scrollbar
-    scrollbar: {
-        el: ".swiper-scrollbar",
-    },
-    breakpoints: {
-        1919: {
-            slidesPerView: 4,
-        },
-        780: {
-            slidesPerView: 3,
-            spaceBetween: 50,
-        },
-        700: {
-            slidesPerView: 2.4,
-            spaceBetween: 50,
-        },
-        450: {
-            slidesPerView: 1.5,
-            spaceBetween: 50,
-        },
-        359: {
-            spaceBetween: 50,
-            slidesPerView: 1.2,
-        },
-        1: {
-            slidesPerView: 1,
-        }
-    },
-});
 
 // нажатие кнопки Оставить заявку на главной
 const heroBtn = document.getElementById("hero-btn");
