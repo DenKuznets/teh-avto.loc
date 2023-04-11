@@ -615,7 +615,8 @@ body.modal-open {
   height: 40px;
   max-width: unset;
 }
-.header__top .header__top-contacts-phone {
+
+.header__top-contacts-phone {
   transition: all 0.2s;
   font-style: normal;
   font-weight: 800;
