@@ -1,0 +1,38 @@
+#certificate {
+  padding-bottom: 45px;
+
+  @media (max-width: $px768) {
+    padding-right: 0;
+  }
+
+  h2 {
+    margin-top: 90px;
+    margin-bottom: 45px;
+
+    @media (max-width: $px480) {
+      text-align: center;
+    }
+  }
+
+  .ellipse2 {
+    right: 13%;
+    top: 1%;
+  }
+}
+
+.certificate__content {
+  max-width: 1290px;
+  margin: 0 auto;
+}
+
+.certificate__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  @media (max-width: $px768) {
+    width: 300px;
+    height: 440px;
+  }
+}

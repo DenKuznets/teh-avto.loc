@@ -1,0 +1,233 @@
+@import './breakpoints.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // color: #fff;
+}
+
+/* Скролл бар */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(71, 71, 71) rgba(108, 108, 108, 0.5);
+}
+
+*::-webkit-scrollbar {
+    height: 14px;
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: rgba(108, 108, 108, 0.5);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(136 136 136);
+    border-radius: 3px;
+    border: 10px solid rgb(136 136 136);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+    -webkit-overflow-x: hidden;
+    -moz-overflow-x: hidden;
+    -ms-overflow-x: hidden;
+    -o-overflow-x: hidden;
+    font-family: 'Open Sans';
+    background: #00110A;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+h1,
+h2,
+a,
+button {
+    font-family: 'Alumni Sans';
+}
+
+button {
+    cursor: pointer;
+    position: relative;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: 0.7px;
+
+    @media (max-width: $px1024) {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    @media (max-width: $px768) {
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 72px;
+        text-align: center;
+    }
+
+    @media (max-width: $px480) {
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 72px;
+        text-align: center;
+    }
+
+    @media (max-width: $px360) {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+    }
+}
+
+h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: 0.7px;
+}
+
+h4 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: 0.9px;
+
+}
+
+p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 140%;
+}
+
+body.lock {
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+
+    &:hover {
+        color: #00AE31;
+    }
+}
+
+.containers {
+    position: relative;
+    min-width: 300px;
+    margin: 0 auto;
+
+    @media (max-width: 1460px) {
+        padding-right: 30px;
+        padding-left: 30px;
+
+        @media (max-width: 1024px) {
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+    }
+
+}
+
+.container-fluid {
+    width: 100vw;
+}
+
+.animate__animated {
+    animation-timing-function: ease;
+}
+
+.animate__zoomIn {
+    animation-duration: .8s;
+}
+
+.animate__backInDown {
+    animation-duration: .8s;
+}
+
+.dot {
+    position: absolute;
+}
+
+.bg1-2 {
+    background: url(../../img/masks/hero-mask.svg);
+}
+
+.ellipse {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(93.58deg, #00AA30 0%, #00D03A 100%);
+}
+
+.ellipse1 {
+    filter: blur(250px);
+}
+
+.ellipse2,
+.ellipse3,
+.ellipse4 {
+    filter: blur(300px);
+}
+
+
+.dot {
+    position: absolute;
+
+    @media (max-width: $px1024) {
+        display: none;
+    }
+}
+
+.ellipse-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.btn-cta {
+    width: 181px;
+    height: 55px;
+    background: linear-gradient(93.58deg, #00AA30 0%, #00D03A 100%);
+    border-radius: 8px;
+    font-family: 'Alumni Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    color: #fff;
+    transition: all 0.4s;
+
+    &:hover {
+        background: linear-gradient(273.58deg, #008024 0%, #00AE31 100%);
+    }
+}
+
+body.modal-open {
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.mySlide {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
