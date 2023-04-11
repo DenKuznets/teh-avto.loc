@@ -28,9 +28,11 @@ const t=t=>"object"==typeof t&&null!==t&&t.constructor===Object&&"[object Object
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./swiper */ "./resources/src/js/components/swiper.js");
+/* harmony import */ var _yandexMaps__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./yandexMaps */ "./resources/src/js/components/yandexMaps.js");
+/* harmony import */ var _swiper__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./swiper */ "./resources/src/js/components/swiper.js");
+/* harmony import */ var _imask__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./imask */ "./resources/src/js/components/imask.js");
+/* harmony import */ var _buttonsPress__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./buttonsPress */ "./resources/src/js/components/buttonsPress.js");
 // import './burger'
-
 // import './sliders'
 // import './fixedMenu'
 //import './scroll'
@@ -39,6 +41,161 @@ __webpack_require__.r(__webpack_exports__);
 //import './animate'
 // import './pop-ap-services'
 // import './antispam'
+
+
+
+
+
+/***/ }),
+
+/***/ "./resources/src/js/components/buttonsPress.js":
+/*!*****************************************************!*\
+  !*** ./resources/src/js/components/buttonsPress.js ***!
+  \*****************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var core_js_modules_es_array_slice_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.array.slice.js */ "./node_modules/core-js/modules/es.array.slice.js");
+/* harmony import */ var core_js_modules_es_array_slice_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_slice_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es.object.to-string.js */ "./node_modules/core-js/modules/es.object.to-string.js");
+/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/es.function.name.js */ "./node_modules/core-js/modules/es.function.name.js");
+/* harmony import */ var core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var core_js_modules_es_array_from_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! core-js/modules/es.array.from.js */ "./node_modules/core-js/modules/es.array.from.js");
+/* harmony import */ var core_js_modules_es_array_from_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_from_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! core-js/modules/es.string.iterator.js */ "./node_modules/core-js/modules/es.string.iterator.js");
+/* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var core_js_modules_es_regexp_exec_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! core-js/modules/es.regexp.exec.js */ "./node_modules/core-js/modules/es.regexp.exec.js");
+/* harmony import */ var core_js_modules_es_regexp_exec_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_regexp_exec_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var core_js_modules_es_regexp_test_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! core-js/modules/es.regexp.test.js */ "./node_modules/core-js/modules/es.regexp.test.js");
+/* harmony import */ var core_js_modules_es_regexp_test_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_regexp_test_js__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! core-js/modules/es.symbol.js */ "./node_modules/core-js/modules/es.symbol.js");
+/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! core-js/modules/es.symbol.description.js */ "./node_modules/core-js/modules/es.symbol.description.js");
+/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! core-js/modules/es.symbol.iterator.js */ "./node_modules/core-js/modules/es.symbol.iterator.js");
+/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! core-js/modules/es.array.iterator.js */ "./node_modules/core-js/modules/es.array.iterator.js");
+/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! core-js/modules/web.dom-collections.iterator.js */ "./node_modules/core-js/modules/web.dom-collections.iterator.js");
+/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_11__);
+
+
+
+
+
+
+
+
+
+
+
+
+function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it.return != null) it.return(); } finally { if (didErr) throw err; } } }; }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+// нажатие кнопки Оставить заявку на главной
+var heroBtn = document.getElementById("hero-btn");
+heroBtn.addEventListener("click", openPopup);
+
+// нажатие кнопки оставить заявку в Услугах
+var servBtns = document.querySelectorAll(".services__card__btn-cta");
+var _iterator = _createForOfIteratorHelper(servBtns),
+  _step;
+try {
+  for (_iterator.s(); !(_step = _iterator.n()).done;) {
+    var btn = _step.value;
+    btn.addEventListener("click", openPopup);
+  }
+
+  // закрытие попапа по кнопке
+} catch (err) {
+  _iterator.e(err);
+} finally {
+  _iterator.f();
+}
+var popupBtn = document.getElementById("popup__close-btn");
+popupBtn.addEventListener("click", closePopup);
+
+// закрытие попапа по клику мимо
+document.getElementById("popup").addEventListener("click", function (e) {
+  if (e.target.classList.contains("popup")) {
+    closePopup();
+  }
+});
+
+// открытие попапа
+function openPopup() {
+  document.getElementById("popup").classList.add("popup-show");
+  document.body.classList.add("modal-open");
+}
+
+// закрыть попап
+function closePopup() {
+  document.getElementById("popup").classList.remove("popup-show");
+  document.body.classList.remove("modal-open");
+}
+
+// бургер нажатие
+var burger = document.querySelector(".burger");
+var closeBtn = document.querySelector(".mobile-menu__close-btn");
+burger.addEventListener("click", function () {
+  var nav = document.querySelector(".nav__list-header");
+  nav.classList.add("mobile-nav-active");
+  burger.classList.remove("burger-show");
+  burger.classList.add("burger-hide");
+  closeBtn.classList.toggle("mobile-menu__close-btn-active");
+});
+
+// кнопка закрыть мобильное меню нажатие
+closeBtn.addEventListener("click", closeMobileMenu);
+
+// ссылки в мобильном меню нажатие
+var mobileMenuAnchors = document.querySelectorAll(".nav__item-header");
+var _iterator2 = _createForOfIteratorHelper(mobileMenuAnchors),
+  _step2;
+try {
+  for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
+    var anchor = _step2.value;
+    anchor.addEventListener("click", closeMobileMenu);
+  }
+
+  // закрыть мобильное меню
+} catch (err) {
+  _iterator2.e(err);
+} finally {
+  _iterator2.f();
+}
+function closeMobileMenu() {
+  var nav = document.querySelector(".nav__list-header");
+  nav.classList.remove("mobile-nav-active");
+  if (closeBtn.classList.contains("mobile-menu__close-btn-active")) {
+    closeBtn.classList.toggle("mobile-menu__close-btn-active");
+    burger.classList.add("burger-show");
+    burger.classList.remove("burger-hide");
+  }
+}
+
+/***/ }),
+
+/***/ "./resources/src/js/components/imask.js":
+/*!**********************************************!*\
+  !*** ./resources/src/js/components/imask.js ***!
+  \**********************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var imask__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! imask */ "./node_modules/imask/esm/index.js");
+
+
+// маска для ввода телефона
+var element = document.querySelector(".form-phone");
+var maskOptions = {
+  mask: "+{7}(000)000-00-00"
+};
+var mask = (0,imask__WEBPACK_IMPORTED_MODULE_0__["default"])(element, maskOptions);
 
 /***/ }),
 
@@ -193,144 +350,25 @@ if (document.querySelector(".newsSwiper")) {
 
 /***/ }),
 
-/***/ "./resources/src/js/init.js":
-/*!**********************************!*\
-  !*** ./resources/src/js/init.js ***!
-  \**********************************/
+/***/ "./resources/src/js/components/yandexMaps.js":
+/*!***************************************************!*\
+  !*** ./resources/src/js/components/yandexMaps.js ***!
+  \***************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var inputmask__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! inputmask */ "./node_modules/inputmask/dist/inputmask.js");
-/* harmony import */ var inputmask__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(inputmask__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var ymaps__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ymaps */ "./node_modules/ymaps/dist/ymaps.esm.js");
 
-(function () {
-  var inputMaskPhone = document.getElementById("inputPhone");
-  if (inputMaskPhone) inputmask__WEBPACK_IMPORTED_MODULE_0___default()("+7 (999) 999 99-99").mask(inputMaskPhone);
-})();
-
-/***/ }),
-
-/***/ "./resources/src/js/main.js":
-/*!**********************************!*\
-  !*** ./resources/src/js/main.js ***!
-  \**********************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var core_js_modules_es_array_slice_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.array.slice.js */ "./node_modules/core-js/modules/es.array.slice.js");
-/* harmony import */ var core_js_modules_es_array_slice_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_slice_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es.object.to-string.js */ "./node_modules/core-js/modules/es.object.to-string.js");
-/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/es.function.name.js */ "./node_modules/core-js/modules/es.function.name.js");
-/* harmony import */ var core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var core_js_modules_es_array_from_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! core-js/modules/es.array.from.js */ "./node_modules/core-js/modules/es.array.from.js");
-/* harmony import */ var core_js_modules_es_array_from_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_from_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! core-js/modules/es.string.iterator.js */ "./node_modules/core-js/modules/es.string.iterator.js");
-/* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var core_js_modules_es_regexp_exec_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! core-js/modules/es.regexp.exec.js */ "./node_modules/core-js/modules/es.regexp.exec.js");
-/* harmony import */ var core_js_modules_es_regexp_exec_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_regexp_exec_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var core_js_modules_es_regexp_test_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! core-js/modules/es.regexp.test.js */ "./node_modules/core-js/modules/es.regexp.test.js");
-/* harmony import */ var core_js_modules_es_regexp_test_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_regexp_test_js__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! core-js/modules/es.symbol.js */ "./node_modules/core-js/modules/es.symbol.js");
-/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! core-js/modules/es.symbol.description.js */ "./node_modules/core-js/modules/es.symbol.description.js");
-/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! core-js/modules/es.symbol.iterator.js */ "./node_modules/core-js/modules/es.symbol.iterator.js");
-/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! core-js/modules/es.array.iterator.js */ "./node_modules/core-js/modules/es.array.iterator.js");
-/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! core-js/modules/web.dom-collections.iterator.js */ "./node_modules/core-js/modules/web.dom-collections.iterator.js");
-/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _plugins_index__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./plugins/_index */ "./resources/src/js/plugins/_index.js");
-/* harmony import */ var _components_index__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/_index */ "./resources/src/js/components/_index.js");
-/* harmony import */ var _init__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./init */ "./resources/src/js/init.js");
-/* harmony import */ var imask__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! imask */ "./node_modules/imask/esm/index.js");
-/* harmony import */ var ymaps__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ymaps */ "./node_modules/ymaps/dist/ymaps.esm.js");
-
-
-
-
-
-
-
-
-
-
-
-
-function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it.return != null) it.return(); } finally { if (didErr) throw err; } } }; }
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-// import 'animate.css';
-
-
-
-// import "./index.html";
-// import "./index.scss";
-
-
-// import Swiper, { Navigation, Pagination } from "swiper";
-// import styles bundle
-
-// нажатие кнопки Оставить заявку на главной
-var heroBtn = document.getElementById("hero-btn");
-heroBtn.addEventListener("click", openPopup);
-
-// нажатие кнопки оставить заявку в Услугах
-var servBtns = document.querySelectorAll(".services__card__btn-cta");
-var _iterator = _createForOfIteratorHelper(servBtns),
-  _step;
-try {
-  for (_iterator.s(); !(_step = _iterator.n()).done;) {
-    var btn = _step.value;
-    btn.addEventListener("click", openPopup);
-  }
-
-  // закрытие попапа по кнопке
-} catch (err) {
-  _iterator.e(err);
-} finally {
-  _iterator.f();
-}
-var popupBtn = document.getElementById("popup__close-btn");
-popupBtn.addEventListener("click", closePopup);
-
-// закрытие попапа по клику мимо
-document.getElementById("popup").addEventListener("click", function (e) {
-  if (e.target.classList.contains("popup")) {
-    closePopup();
-  }
-});
-
-// открытие попапа
-function openPopup() {
-  document.getElementById("popup").classList.add("popup-show");
-  document.body.classList.add("modal-open");
-}
-
-// закрыть попап
-function closePopup() {
-  document.getElementById("popup").classList.remove("popup-show");
-  document.body.classList.remove("modal-open");
-}
-
-// маска для ввода телефона
-var element = document.querySelector(".form-phone");
-var maskOptions = {
-  mask: "+{7}(000)000-00-00"
-};
-var mask = (0,imask__WEBPACK_IMPORTED_MODULE_15__["default"])(element, maskOptions);
 
 // YANDEX MAPS
 var yandexMap = document.getElementById("ymaps");
 (function () {
-  ymaps__WEBPACK_IMPORTED_MODULE_16__["default"].load("https://api-maps.yandex.ru/2.1/?lang=ru_RU").then(function (maps) {
+  ymaps__WEBPACK_IMPORTED_MODULE_0__["default"].load("https://api-maps.yandex.ru/2.1/?lang=ru_RU").then(function (maps) {
     var mapContainer = document.createElement("div");
     mapContainer.style.height = "100%";
     mapContainer.style.width = "100%";
-    mapContainer.id = 'mapContainer';
+    mapContainer.id = "mapContainer";
     var map = new maps.Map(mapContainer, {
       // 51.367258, 42.078642
       center: [56.237432, 44.002465],
@@ -365,45 +403,41 @@ var yandexMap = document.getElementById("ymaps");
   });
 })();
 
-// бургер нажатие
-var burger = document.querySelector(".burger");
-var closeBtn = document.querySelector(".mobile-menu__close-btn");
-burger.addEventListener("click", function () {
-  var nav = document.querySelector(".nav__list-header");
-  nav.classList.add("mobile-nav-active");
-  burger.classList.remove("burger-show");
-  burger.classList.add("burger-hide");
-  closeBtn.classList.toggle("mobile-menu__close-btn-active");
-});
+/***/ }),
 
-// кнопка закрыть мобильное меню нажатие
-closeBtn.addEventListener("click", closeMobileMenu);
+/***/ "./resources/src/js/init.js":
+/*!**********************************!*\
+  !*** ./resources/src/js/init.js ***!
+  \**********************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-// ссылки в мобильном меню нажатие
-var mobileMenuAnchors = document.querySelectorAll(".nav__item-header");
-var _iterator2 = _createForOfIteratorHelper(mobileMenuAnchors),
-  _step2;
-try {
-  for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
-    var anchor = _step2.value;
-    anchor.addEventListener("click", closeMobileMenu);
-  }
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var inputmask__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! inputmask */ "./node_modules/inputmask/dist/inputmask.js");
+/* harmony import */ var inputmask__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(inputmask__WEBPACK_IMPORTED_MODULE_0__);
 
-  // закрыть мобильное меню
-} catch (err) {
-  _iterator2.e(err);
-} finally {
-  _iterator2.f();
-}
-function closeMobileMenu() {
-  var nav = document.querySelector(".nav__list-header");
-  nav.classList.remove("mobile-nav-active");
-  if (closeBtn.classList.contains("mobile-menu__close-btn-active")) {
-    closeBtn.classList.toggle("mobile-menu__close-btn-active");
-    burger.classList.add("burger-show");
-    burger.classList.remove("burger-hide");
-  }
-}
+(function () {
+  var inputMaskPhone = document.getElementById("inputPhone");
+  if (inputMaskPhone) inputmask__WEBPACK_IMPORTED_MODULE_0___default()("+7 (999) 999 99-99").mask(inputMaskPhone);
+})();
+
+/***/ }),
+
+/***/ "./resources/src/js/main.js":
+/*!**********************************!*\
+  !*** ./resources/src/js/main.js ***!
+  \**********************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _plugins_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./plugins/_index */ "./resources/src/js/plugins/_index.js");
+/* harmony import */ var _components_index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/_index */ "./resources/src/js/components/_index.js");
+/* harmony import */ var _init__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./init */ "./resources/src/js/init.js");
+// import 'animate.css';
+
+
+
 
 /***/ }),
 
