@@ -140,12 +140,15 @@ function closePopup() {
 // бургер нажатие
 var burger = document.querySelector(".burger");
 var closeBtn = document.querySelector(".mobile-menu__close-btn");
+var phone = document.querySelector(".header__top-contacts-phone");
 burger.addEventListener("click", function () {
   var nav = document.querySelector(".nav__list-header");
   nav.classList.add("mobile-nav-active");
   burger.classList.remove("burger-show");
   burger.classList.add("burger-hide");
   closeBtn.classList.toggle("mobile-menu__close-btn-active");
+  // console.log(phone);
+  phone.classList.toggle("header__top-contacts-phone-mobile");
 });
 
 // кнопка закрыть мобильное меню нажатие
@@ -174,6 +177,7 @@ function closeMobileMenu() {
     closeBtn.classList.toggle("mobile-menu__close-btn-active");
     burger.classList.add("burger-show");
     burger.classList.remove("burger-hide");
+    phone.classList.toggle("header__top-contacts-phone-mobile");
   }
 }
 
@@ -233,9 +237,9 @@ if (document.querySelector(".mySwiper")) {
     // },
 
     // And if we need scrollbar
-    scrollbar: {
-      el: ".swiper-scrollbar"
-    },
+    // scrollbar: {
+    //     el: ".swiper-scrollbar",
+    // },
     breakpoints: {
       1919: {
         slidesPerView: 4,

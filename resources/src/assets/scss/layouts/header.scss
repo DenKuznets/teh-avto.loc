@@ -22,6 +22,8 @@
   }
 
   &-logo {
+    position: relative;
+    z-index: 2;
     cursor: pointer;
 
     // flex: 1;
@@ -37,7 +39,7 @@
   }
 
   &-contacts {
-    @media (max-width: $px768) {
+    @media (max-width: $px850) {
       margin-right: 50px;
     }
 
@@ -57,15 +59,14 @@
     font-weight: 800;
     font-size: 24px;
     line-height: 29px;
+    transition: all 0.4s;
   }
 }
 
-
-//.headerFixed.active {
-//    width: 100vw;
-//    height: 100vh;
-//    position: fixed;
-//    top: 0;
-//    z-index: 2000;
-//    background: #ffffff;
-//}
+.header__top-contacts-phone-mobile {
+  position: fixed;
+  z-index: 2;
+  left: 50%;
+  top: 90%;
+  transform: translate(-50%);
+}

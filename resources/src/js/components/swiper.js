@@ -23,9 +23,9 @@ if (document.querySelector(".mySwiper")) {
         // },
 
         // And if we need scrollbar
-        scrollbar: {
-            el: ".swiper-scrollbar",
-        },
+        // scrollbar: {
+        //     el: ".swiper-scrollbar",
+        // },
         breakpoints: {
             1919: {
                 slidesPerView: 4,

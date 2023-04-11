@@ -11,4 +11,3 @@ import './yandexMaps'
 import './swiper'
 import './imask'
 import './buttonsPress'
-

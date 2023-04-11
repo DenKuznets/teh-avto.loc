@@ -34,12 +34,15 @@ function closePopup() {
 // бургер нажатие
 const burger = document.querySelector(".burger");
 const closeBtn = document.querySelector(".mobile-menu__close-btn");
+const phone = document.querySelector(".header__top-contacts-phone");
 burger.addEventListener("click", function () {
     const nav = document.querySelector(".nav__list-header");
     nav.classList.add("mobile-nav-active");
     burger.classList.remove("burger-show");
     burger.classList.add("burger-hide");
     closeBtn.classList.toggle("mobile-menu__close-btn-active");
+    // console.log(phone);
+    phone.classList.toggle("header__top-contacts-phone-mobile");
 });
 
 // кнопка закрыть мобильное меню нажатие
@@ -59,5 +62,6 @@ function closeMobileMenu() {
         closeBtn.classList.toggle("mobile-menu__close-btn-active");
         burger.classList.add("burger-show");
         burger.classList.remove("burger-hide");
+        phone.classList.toggle("header__top-contacts-phone-mobile");
     }
 }

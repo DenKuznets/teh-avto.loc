@@ -606,6 +606,8 @@ body.modal-open {
   flex: 1;
 }
 .header__top-logo {
+  position: relative;
+  z-index: 2;
   cursor: pointer;
 }
 .header__top-logo img {
@@ -619,6 +621,15 @@ body.modal-open {
   font-weight: 800;
   font-size: 24px;
   line-height: 29px;
+  transition: all 0.4s;
+}
+
+.header__top-contacts-phone-mobile {
+  position: fixed;
+  z-index: 2;
+  left: 50%;
+  top: 90%;
+  transform: translate(-50%);
 }
 
 footer {
@@ -1163,6 +1174,8 @@ footer {
 .mobile-menu__close-btn {
   display: none;
   background-color: #00110A;
+  position: relative;
+  z-index: 2;
 }
 .mobile-menu__close-btn img {
   width: 30px;
@@ -1338,6 +1351,41 @@ footer {
   }
 }
 
+@media (max-width: 850px){
+  .header__top-contacts {
+    margin-right: 50px;
+  }
+  .nav__list-header {
+    max-height: 0;
+    min-height: 0;
+    overflow: hidden;
+    transition: all 0.4s;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  .nav__list-header.mobile-nav-active {
+    min-height: 100vh;
+  }
+  .nav__list-header.mobile-nav-active .nav__item-header {
+    margin-bottom: 50px;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.burger-hide {
+    display: none;
+  }
+  .burger-show {
+    display: block;
+  }
+}
+
 @media (max-width: 768px){
   h1 {
     font-weight: 700;
@@ -1350,9 +1398,6 @@ footer {
   }
   .header__top-logo {
     margin-right: auto;
-  }
-  .header__top-contacts {
-    margin-right: 50px;
   }
   footer {
     min-height: 307px;
@@ -1380,25 +1425,6 @@ footer {
     padding-bottom: 20px;
     width: 100%;
     text-align: center;
-  }
-  .nav__list-header {
-    max-height: 0;
-    min-height: 0;
-    overflow: hidden;
-    transition: all 0.4s;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .nav__list-header.mobile-nav-active {
-    min-height: 100vh;
-  }
-  .nav__list-header.mobile-nav-active .nav__item-header {
-    margin-bottom: 50px;
   }
   .nav__list-footer {
     padding-right: 21px;
@@ -1470,15 +1496,6 @@ footer {
   }
   #certificate {
     padding-right: 0;
-  }
-  .burger {
-    display: block;
-  }
-  .burger.burger-hide {
-    display: none;
-  }
-  .burger-show {
-    display: block;
   }
   .mobile-menu__close-btn-active {
     display: block;

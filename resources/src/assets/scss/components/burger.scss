@@ -5,7 +5,7 @@
     cursor: pointer;
     background-color: #00110A;
 
-    @media (max-width: $px768) {
+    @media (max-width: $px850) {
         display: block;
 
         &.burger-hide {
@@ -21,7 +21,7 @@
 }
 
 .burger-show {
-    @media (max-width: $px768) {
+    @media (max-width: $px850) {
         display: block;
     }
 }

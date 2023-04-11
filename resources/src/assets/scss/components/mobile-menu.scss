@@ -1,6 +1,8 @@
 .mobile-menu__close-btn {
   display: none;
   background-color: #00110A;
+  position: relative;
+  z-index: 2;
   @media (max-width: $px768) {  
       &-active {
         display: block;
