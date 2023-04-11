@@ -165,8 +165,26 @@ a {
     position: absolute;
 }
 
-.bg1-2 {
-    background: url(../../img/masks/hero-mask.svg);
+.mask {
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.mask1 {
+    background-image: url(/assets/img/masks/mask1.svg);
+}
+
+.mask2 {
+    background-image: url(/assets/img/masks/mask2.svg);
+    background-position: 0% 72%;
+    // background-origin: ;
+    // outline: 1px solid red;
+}
+
+.mask3 {
+    background-image: url(/assets/img/masks/mask3.svg);
+    background-position: 0% 101%;
+    // outline: 1px solid red;
 }
 
 .ellipse {

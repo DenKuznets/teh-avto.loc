@@ -511,8 +511,23 @@ a:hover {
   position: absolute;
 }
 
-.bg1-2 {
-  background: url(../../img/masks/hero-mask.svg);
+.mask {
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.mask1 {
+  background-image: url(/assets/img/masks/mask1.svg);
+}
+
+.mask2 {
+  background-image: url(/assets/img/masks/mask2.svg);
+  background-position: 0% 72%;
+}
+
+.mask3 {
+  background-image: url(/assets/img/masks/mask3.svg);
+  background-position: 0% 101%;
 }
 
 .ellipse {
@@ -1120,7 +1135,7 @@ footer {
 
 #ymaps {
   width: 100%;
-  height: 100%;
+  height: 500px;
   border-radius: 8px;
   overflow: hidden;
   margin-top: 30px;

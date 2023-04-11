@@ -32,7 +32,7 @@
 
 <div id="popup" class="popup">
     <div class="popup__content">
-        <img id="popup__close-btn" src="./img/popup-close-btn.svg" alt="" class="popup__close-btn">
+        <img id="popup__close-btn" src="{{ asset('assets/img/popup-close-btn.svg') }}" alt="" class="popup__close-btn">
         <h2>
             Оставьте заявку, мы обязательно свяжемся с вами!
         </h2>
