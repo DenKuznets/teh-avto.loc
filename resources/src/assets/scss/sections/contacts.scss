@@ -102,12 +102,15 @@
   align-items: center;
   margin-top: 40px;
   transition: all 0.2s;
-
+  
   @media (max-width: $px480) {
     justify-content: center;
   }
-
+  
   img {
+    transition: all 0.2s;
+    transform: scale(1);
+
     &:hover {
       transform: scale(1.05);
     }
@@ -119,7 +122,6 @@
   position: relative;
   width: 100%;
 
-  // outline: 1px solid red;
   @media (max-width: $px1024) {
     max-width: unset;
     width: 100%;
