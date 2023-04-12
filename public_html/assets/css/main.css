@@ -1108,7 +1108,7 @@ footer {
   width: 100%;
 }
 
-.contacts-text h2 {
+.contacts__text h2 {
   margin-top: 40px;
   margin-bottom: 45px;
 }
@@ -1190,6 +1190,21 @@ footer {
   max-width: unset;
   width: 40px;
   height: 28px;
+}
+
+.animate__delay-03s {
+  animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.animate__delay-06s {
+  animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+.animate__delay-09s {
+  animation-delay: 1.2s;
+  animation-delay: 1.2s;
 }
 
 .mobile-menu__close-btn {
@@ -1654,7 +1669,7 @@ footer {
   #certificate h2 {
     text-align: center;
   }
-  .contacts-text h2 {
+  .contacts__text h2 {
     text-align: center;
   }
   .icons-container {

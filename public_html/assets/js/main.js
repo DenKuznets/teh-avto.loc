@@ -65,37 +65,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var core_js_modules_es_array_from_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_from_js__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! core-js/modules/es.string.iterator.js */ "./node_modules/core-js/modules/es.string.iterator.js");
 /* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var core_js_modules_es_array_slice_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! core-js/modules/es.array.slice.js */ "./node_modules/core-js/modules/es.array.slice.js");
-/* harmony import */ var core_js_modules_es_array_slice_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_slice_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! core-js/modules/es.function.name.js */ "./node_modules/core-js/modules/es.function.name.js");
-/* harmony import */ var core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_function_name_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var core_js_modules_es_regexp_exec_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! core-js/modules/es.regexp.exec.js */ "./node_modules/core-js/modules/es.regexp.exec.js");
-/* harmony import */ var core_js_modules_es_regexp_exec_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_regexp_exec_js__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var core_js_modules_es_regexp_test_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! core-js/modules/es.regexp.test.js */ "./node_modules/core-js/modules/es.regexp.test.js");
-/* harmony import */ var core_js_modules_es_regexp_test_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_regexp_test_js__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! core-js/modules/es.symbol.js */ "./node_modules/core-js/modules/es.symbol.js");
-/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! core-js/modules/es.symbol.description.js */ "./node_modules/core-js/modules/es.symbol.description.js");
-/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! core-js/modules/es.symbol.iterator.js */ "./node_modules/core-js/modules/es.symbol.iterator.js");
-/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! core-js/modules/es.array.iterator.js */ "./node_modules/core-js/modules/es.array.iterator.js");
-/* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! core-js/modules/web.dom-collections.iterator.js */ "./node_modules/core-js/modules/web.dom-collections.iterator.js");
-/* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var animate_css__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! animate.css */ "./node_modules/animate.css/animate.css");
-function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it.return != null) it.return(); } finally { if (didErr) throw err; } } }; }
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-
-
-
-
-
-
-
-
+/* harmony import */ var animate_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! animate.css */ "./node_modules/animate.css/animate.css");
 
 
 
@@ -108,11 +78,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function animate(elem) {
     var className = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "animate";
+    // console.log("elem", elem);
     var windowCenter = window.innerHeight / 1 + window.scrollY; // ширина экрана * 1.1 + высота на сколько просролили экран
     elem.forEach(function (el) {
+      // console.log("el", el);
       var observer = new IntersectionObserver(function (entries) {
         entries.forEach(function (entry) {
-          console.log(entry);
+          // console.log(entry);
           if (entry.isIntersecting) {
             return entry.target.classList.add(className);
           }
@@ -127,123 +99,136 @@ document.addEventListener("DOMContentLoaded", function () {
 
   //tech-auto animations
   // basic class
-  var animateClass = 'animate_animated';
+  var animateClass = "animate_animated";
   // delays
   var delay03 = "animate__delay-03s";
-  var delay06 = 'animate__delay-06s';
+  var delay06 = "animate__delay-06s";
   var delay09 = "animate__delay-09s";
+  // animation types
+  var zoomIn = "animate__zoomIn";
+  var backInRight = "animate__backInRight";
+  var backInLeft = "animate__backInLeft";
+  var bounceInDown = "animate__bounceInDown";
+  var bounceInUp = "animate__bounceInUp";
+  var fadeIn = "animate__fadeIn";
+  var flip = "animate__flip";
+  var lightSpeedInRight = "animate__lightSpeedInRight";
+  var zoomInRight = "animate__zoomInRight";
+
+  //#contacts
+  var contactsText = document.querySelector('.contacts__text');
+  var contactsMap = document.querySelector('.contacts__map');
+  if (contactsText) {
+    contactsText.classList.add(animateClass);
+    animate([contactsText], backInLeft);
+  }
+  if (contactsMap) {
+    contactsMap.classList.add(animateClass);
+    animate([contactsMap], backInRight);
+  }
+
+  // #about
+  var aboutText = document.querySelector('.about__text');
+  var aboutImage = document.querySelector('.about__image');
+  if (aboutText) {
+    aboutText.classList.add(animateClass);
+    animate([aboutText], backInLeft);
+  }
+  if (aboutImage) {
+    aboutImage.classList.add(animateClass);
+    animate([aboutImage], backInRight);
+  }
+
+  // #stages
+  var stagesCards = document.querySelector('.stages__cards');
+  if (stagesCards) {
+    for (var i = 0; i < stagesCards.children.length; i++) {
+      var elem = stagesCards.children[i];
+      elem.classList.add(animateClass);
+      if (i === 0 || i === 1) {
+        animate([elem], bounceInDown);
+      }
+      if (i === 2 || i === 3) {
+        elem.classList.add(delay03);
+        animate([elem], bounceInUp);
+      }
+    }
+  }
+
+  // #services
+  var servCards = document.querySelector(".services__cards");
+  if (servCards) {
+    for (var _i = 0; _i < servCards.children.length; _i++) {
+      var _elem = servCards.children[_i];
+      _elem.classList.add(animateClass);
+      if (_i % 2 === 0) {
+        animate([_elem], backInLeft);
+      }
+      if (_i % 2 !== 0) {
+        _elem.classList.add(delay03);
+        animate([_elem], backInRight);
+      }
+    }
+  }
 
   // #hero
+  var heroImg = document.querySelector(".hero__image");
+  if (heroImg) {
+    heroImg.classList.add(animateClass);
+    animate([heroImg], backInRight);
+  }
   var heroText = document.querySelector(".hero__text");
-  var zoomIn = "animate__zoomIn";
-  // console.log('hero text', heroText.children);
   if (heroText) {
-    var _iterator = _createForOfIteratorHelper(heroText.children),
-      _step;
-    try {
-      for (_iterator.s(); !(_step = _iterator.n()).done;) {
-        var elem = _step.value;
-        // console.log(elem);
-        elem.classList.add(animateClass);
-        elem.classList.add(zoomIn);
-        // animate(elem, "animate__zoomIn");
+    for (var _i2 = 0; _i2 < heroText.children.length; _i2++) {
+      var _elem2 = heroText.children[_i2];
+      _elem2.classList.add(animateClass);
+      if (_i2 === 1) {
+        _elem2.classList.add(delay03);
       }
-    } catch (err) {
-      _iterator.e(err);
-    } finally {
-      _iterator.f();
+      if (_i2 === 2) {
+        _elem2.classList.add(delay06);
+      }
     }
-    animate(Array.from(heroText), zoomIn);
+    animate(Array.from(heroText.children), zoomIn);
   }
   window.addEventListener("scroll", function () {
-    if (heroText) animate(Array.from(heroText), "animate__zoomIn");
+    if (heroImg) animate([heroImg], backInRight);
+    if (heroText) animate(Array.from(heroText.children), zoomIn);
+    if (servCards) {
+      for (var _i3 = 0; _i3 < servCards.children.length; _i3++) {
+        var _elem3 = servCards.children[_i3];
+        if (_i3 % 2 === 0) {
+          animate([_elem3], backInLeft);
+        }
+        if (_i3 % 2 !== 0) {
+          animate([_elem3], backInRight);
+        }
+      }
+    }
+    if (stagesCards) {
+      for (var _i4 = 0; _i4 < stagesCards.children.length; _i4++) {
+        var _elem4 = stagesCards.children[_i4];
+        if (_i4 === 0 || _i4 === 1) {
+          animate([_elem4], bounceInDown);
+        }
+        if (_i4 === 2 || _i4 === 3) {
+          animate([_elem4], bounceInUp);
+        }
+      }
+    }
+    if (aboutText) {
+      animate([aboutText], backInLeft);
+    }
+    if (aboutImage) {
+      animate([aboutImage], backInRight);
+    }
+    if (contactsText) {
+      animate([contactsText], backInLeft);
+    }
+    if (contactsMap) {
+      animate([contactsMap], backInRight);
+    }
   });
-
-  // animate__backInDown
-  // const firstScreenTitle = document.querySelectorAll(".first-screen__title");
-  // const firstScreenContainer = document.querySelectorAll(
-  //     ".first-screen__container"
-  // );
-  // const firstScreenButton = document.querySelectorAll(
-  //     ".first-screen__button"
-  // );
-  // const sectionTitleAbout = document.querySelectorAll(
-  //     ".section-title__about"
-  // );
-  // const aboutTopList = document.querySelectorAll(".about__top-list");
-  // const aboutTopImg = document.querySelectorAll(".about__top-img");
-  // const aboutBottomList = document.querySelectorAll(".about__bottom-list");
-  // const aboutBottomRight = document.querySelectorAll(".about__bottom-right");
-  // const sectionTitleProject = document.querySelectorAll(
-  //     ".section-title__project"
-  // );
-  // const projectBlockLeftText = document.querySelectorAll(
-  //     ".project__block-left-text"
-  // );
-  // const projectBlockRight = document.querySelectorAll(
-  //     ".project__block-right"
-  // );
-  // const sectionTitleFooter = document.querySelectorAll(
-  //     ".section-title__footer"
-  // );
-  // const footerContactsPhone = document.querySelectorAll(
-  //     ".footer__contacts-phone"
-  // );
-  // const footerContactsEmail = document.querySelectorAll(
-  //     ".footer__contacts-email"
-  // );
-  // const footerContactsFrom = document.querySelectorAll(
-  //     ".footer__contacts-from"
-  // );
-  // const footerMap = document.querySelectorAll(".footer__map");
-  // const aboutTopLeft = document.querySelectorAll(".about__top-left");
-  // const projectBlockLeftImg = document.querySelectorAll(
-  //     ".project__block-left-img"
-  // );
-  // const projectBlockCenterImg = document.querySelectorAll(
-  //     ".project__block-center-img"
-  // );
-
-  // if (firstScreenTitle) animate(firstScreenTitle, 'animate__zoomIn')
-  // if (firstScreenContainer) animate(firstScreenContainer, 'animate__zoomIn')
-  // if (firstScreenButton) animate(firstScreenButton, 'animate__zoomIn')
-  // if (sectionTitleAbout) animate(sectionTitleAbout, 'animate__zoomIn')
-  // if (aboutTopList) animate(aboutTopList, 'animate__zoomIn')
-  // if (aboutTopImg) animate(aboutTopImg, 'animate__zoomIn')
-  // if (aboutBottomList) animate(aboutBottomList, 'animate__backInLeft')
-  // if (aboutBottomRight) animate(aboutBottomRight, 'animate__backInRight')
-  // if (sectionTitleProject) animate(sectionTitleProject, 'animate__zoomIn')
-  // if (projectBlockLeftText) animate(projectBlockLeftText, 'animate__zoomIn')
-  // if (projectBlockRight) animate(projectBlockRight, 'animate__backInRight')
-  // if (sectionTitleFooter) animate(sectionTitleFooter, 'animate__zoomIn')
-  // if (footerContactsPhone) animate(footerContactsPhone, 'animate__zoomIn')
-  // if (footerContactsEmail) animate(footerContactsEmail, 'animate__zoomIn')
-  // if (footerContactsFrom) animate(footerContactsFrom, 'animate__zoomIn')
-  // if (footerMap) animate(footerMap, 'animate__zoomIn')
-  // if (aboutTopLeft) animate(aboutTopLeft, 'animate__backInLeft')
-  // if (projectBlockLeftImg) animate(projectBlockLeftImg, 'animate__backInLeft')
-  // if (projectBlockCenterImg) animate(projectBlockCenterImg, 'animate__zoomIn')
-
-  // window.addEventListener("scroll", () => {
-  // if (firstScreenTitle) animate(firstScreenTitle, 'animate__zoomIn')
-  // if (firstScreenContainer) animate(firstScreenContainer, 'animate__zoomIn')
-  // if (firstScreenButton) animate(firstScreenButton, 'animate__zoomIn')
-  // if (sectionTitleAbout) animate(sectionTitleAbout, 'animate__zoomIn')
-  // if (aboutTopList) animate(aboutTopList, 'animate__zoomIn')
-  // if (aboutTopImg) animate(aboutTopImg, 'animate__zoomIn')
-  // if (aboutBottomList) animate(aboutBottomList, 'animate__backInLeft')
-  // if (aboutBottomRight) animate(aboutBottomRight, 'animate__backInRight')
-  // if (sectionTitleProject) animate(sectionTitleProject, 'animate__zoomIn')
-  // if (projectBlockLeftText) animate(projectBlockLeftText, 'animate__zoomIn')
-  // if (projectBlockRight) animate(projectBlockRight, 'animate__backInRight')
-  // if (sectionTitleFooter) animate(sectionTitleFooter, 'animate__zoomIn')
-  // if (footerContactsPhone) animate(footerContactsPhone, 'animate__zoomIn')
-  // if (footerContactsFrom) animate(footerContactsFrom, 'animate__zoomIn')
-  // if (footerMap) animate(footerMap, 'animate__zoomIn')
-  // if (aboutTopLeft) animate(aboutTopLeft, 'animate__backInLeft')
-  // if (projectBlockLeftImg) animate(projectBlockLeftImg, 'animate__backInLeft')
-  // if (projectBlockCenterImg) animate(projectBlockCenterImg, 'animate__zoomIn')
-  // });
 });
 
 /***/ }),

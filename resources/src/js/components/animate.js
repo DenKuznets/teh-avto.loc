@@ -6,11 +6,13 @@ document.addEventListener("DOMContentLoaded", () => {
     // className - класс отвечающий за анимацию
 
     function animate(elem, className = "animate") {
+        // console.log("elem", elem);
         let windowCenter = window.innerHeight / 1 + window.scrollY; // ширина экрана * 1.1 + высота на сколько просролили экран
         elem.forEach((el) => {
+            // console.log("el", el);
             let observer = new IntersectionObserver(function (entries) {
                 entries.forEach(function (entry) {
-                    console.log(entry);
+                    // console.log(entry);
                     if (entry.isIntersecting) {
                         return entry.target.classList.add(className);
                     }
@@ -26,129 +28,137 @@ document.addEventListener("DOMContentLoaded", () => {
 
     //tech-auto animations
     // basic class
-    const animateClass = 'animate_animated';
+    const animateClass = "animate_animated";
     // delays
     const delay03 = "animate__delay-03s";
-    const delay06 = 'animate__delay-06s';
+    const delay06 = "animate__delay-06s";
     const delay09 = "animate__delay-09s";
+    // animation types
+    const zoomIn = "animate__zoomIn";
+    const backInRight = "animate__backInRight";
+    const backInLeft = "animate__backInLeft";
+    const bounceInDown = "animate__bounceInDown";
+    const bounceInUp = "animate__bounceInUp";
+    const fadeIn = "animate__fadeIn";
+    const flip = "animate__flip";
+    const lightSpeedInRight = "animate__lightSpeedInRight";
+    const zoomInRight = "animate__zoomInRight";
+
+    //#contacts
+    const contactsText = document.querySelector('.contacts__text');
+    const contactsMap = document.querySelector('.contacts__map');
+    if (contactsText) {
+        contactsText.classList.add(animateClass);
+        animate([contactsText], backInLeft)
+    }
+    if (contactsMap) {
+        contactsMap.classList.add(animateClass);
+        animate([contactsMap], backInRight);
+    }
+
+    // #about
+    const aboutText = document.querySelector('.about__text');
+    const aboutImage = document.querySelector('.about__image');
+    if (aboutText) {
+        aboutText.classList.add(animateClass);
+        animate([aboutText], backInLeft);
+    }
+    if (aboutImage) {
+        aboutImage.classList.add(animateClass);
+        animate([aboutImage], backInRight);
+    }
+
+
+    // #stages
+    const stagesCards = document.querySelector('.stages__cards');
+    if (stagesCards) {
+        for (let i = 0; i < stagesCards.children.length; i++) {
+            const elem = stagesCards.children[i];
+            elem.classList.add(animateClass);
+            if (i === 0 || i === 1) {
+                animate([elem], bounceInDown);
+            }
+            if (i === 2 || i === 3) {
+                elem.classList.add(delay03);
+                animate([elem], bounceInUp);
+            }
+        }
+    }
+
+    // #services
+    const servCards = document.querySelector(".services__cards");
+    if (servCards) {
+        for (let i = 0; i < servCards.children.length; i++) {
+            const elem = servCards.children[i];
+            elem.classList.add(animateClass);
+            if (i % 2 === 0) {
+                animate([elem], backInLeft)
+            }
+            if (i % 2 !== 0) {
+                elem.classList.add(delay03);
+                animate([elem], backInRight);
+            }
+        }
+    }
 
     // #hero
+    const heroImg = document.querySelector(".hero__image");
+    if (heroImg) {
+        heroImg.classList.add(animateClass);
+        animate([heroImg], backInRight);
+    }
+
     const heroText = document.querySelector(".hero__text");
-    const zoomIn = "animate__zoomIn";
-    // console.log('hero text', heroText.children);
     if (heroText) {
-        for (let elem of heroText.children) {
-            // console.log(elem);
+        for (let i = 0; i < heroText.children.length; i++) {
+            const elem = heroText.children[i];
             elem.classList.add(animateClass);
-            elem.classList.add(zoomIn);
-            // animate(elem, "animate__zoomIn");
+            if (i === 1) {
+                elem.classList.add(delay03);
+            }
+            if (i === 2) {
+                elem.classList.add(delay06);
+            }
         }
-        animate(Array.from(heroText), zoomIn);
+        animate(Array.from(heroText.children), zoomIn);
     }
 
     window.addEventListener("scroll", () => {
-        if (heroText) animate(Array.from(heroText), "animate__zoomIn");
+        if (heroImg) animate([heroImg], backInRight);
+        if (heroText) animate(Array.from(heroText.children), zoomIn);
+        if (servCards) {
+            for (let i = 0; i < servCards.children.length; i++) {
+                const elem = servCards.children[i];
+                if (i % 2 === 0) {
+                    animate([elem], backInLeft);
+                }
+                if (i % 2 !== 0) {
+                    animate([elem], backInRight);
+                }
+            }
+        }
+        if (stagesCards) {
+            for (let i = 0; i < stagesCards.children.length; i++) {
+                const elem = stagesCards.children[i];
+                if (i === 0 || i === 1) {
+                    animate([elem], bounceInDown);
+                }
+                if (i === 2 || i === 3) {
+                    animate([elem], bounceInUp);
+                }
+            }
+        }
+        if (aboutText) {
+            animate([aboutText], backInLeft);
+        }
+        if (aboutImage) {
+            animate([aboutImage], backInRight);
+        }
+        if (contactsText) {
+            animate([contactsText], backInLeft);
+        }
+        if (contactsMap) {
+            animate([contactsMap], backInRight);
+        }
     });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    // animate__backInDown
-    // const firstScreenTitle = document.querySelectorAll(".first-screen__title");
-    // const firstScreenContainer = document.querySelectorAll(
-    //     ".first-screen__container"
-    // );
-    // const firstScreenButton = document.querySelectorAll(
-    //     ".first-screen__button"
-    // );
-    // const sectionTitleAbout = document.querySelectorAll(
-    //     ".section-title__about"
-    // );
-    // const aboutTopList = document.querySelectorAll(".about__top-list");
-    // const aboutTopImg = document.querySelectorAll(".about__top-img");
-    // const aboutBottomList = document.querySelectorAll(".about__bottom-list");
-    // const aboutBottomRight = document.querySelectorAll(".about__bottom-right");
-    // const sectionTitleProject = document.querySelectorAll(
-    //     ".section-title__project"
-    // );
-    // const projectBlockLeftText = document.querySelectorAll(
-    //     ".project__block-left-text"
-    // );
-    // const projectBlockRight = document.querySelectorAll(
-    //     ".project__block-right"
-    // );
-    // const sectionTitleFooter = document.querySelectorAll(
-    //     ".section-title__footer"
-    // );
-    // const footerContactsPhone = document.querySelectorAll(
-    //     ".footer__contacts-phone"
-    // );
-    // const footerContactsEmail = document.querySelectorAll(
-    //     ".footer__contacts-email"
-    // );
-    // const footerContactsFrom = document.querySelectorAll(
-    //     ".footer__contacts-from"
-    // );
-    // const footerMap = document.querySelectorAll(".footer__map");
-    // const aboutTopLeft = document.querySelectorAll(".about__top-left");
-    // const projectBlockLeftImg = document.querySelectorAll(
-    //     ".project__block-left-img"
-    // );
-    // const projectBlockCenterImg = document.querySelectorAll(
-    //     ".project__block-center-img"
-    // );
-
-    // if (firstScreenTitle) animate(firstScreenTitle, 'animate__zoomIn')
-    // if (firstScreenContainer) animate(firstScreenContainer, 'animate__zoomIn')
-    // if (firstScreenButton) animate(firstScreenButton, 'animate__zoomIn')
-    // if (sectionTitleAbout) animate(sectionTitleAbout, 'animate__zoomIn')
-    // if (aboutTopList) animate(aboutTopList, 'animate__zoomIn')
-    // if (aboutTopImg) animate(aboutTopImg, 'animate__zoomIn')
-    // if (aboutBottomList) animate(aboutBottomList, 'animate__backInLeft')
-    // if (aboutBottomRight) animate(aboutBottomRight, 'animate__backInRight')
-    // if (sectionTitleProject) animate(sectionTitleProject, 'animate__zoomIn')
-    // if (projectBlockLeftText) animate(projectBlockLeftText, 'animate__zoomIn')
-    // if (projectBlockRight) animate(projectBlockRight, 'animate__backInRight')
-    // if (sectionTitleFooter) animate(sectionTitleFooter, 'animate__zoomIn')
-    // if (footerContactsPhone) animate(footerContactsPhone, 'animate__zoomIn')
-    // if (footerContactsEmail) animate(footerContactsEmail, 'animate__zoomIn')
-    // if (footerContactsFrom) animate(footerContactsFrom, 'animate__zoomIn')
-    // if (footerMap) animate(footerMap, 'animate__zoomIn')
-    // if (aboutTopLeft) animate(aboutTopLeft, 'animate__backInLeft')
-    // if (projectBlockLeftImg) animate(projectBlockLeftImg, 'animate__backInLeft')
-    // if (projectBlockCenterImg) animate(projectBlockCenterImg, 'animate__zoomIn')
-
-    // window.addEventListener("scroll", () => {
-        // if (firstScreenTitle) animate(firstScreenTitle, 'animate__zoomIn')
-        // if (firstScreenContainer) animate(firstScreenContainer, 'animate__zoomIn')
-        // if (firstScreenButton) animate(firstScreenButton, 'animate__zoomIn')
-        // if (sectionTitleAbout) animate(sectionTitleAbout, 'animate__zoomIn')
-        // if (aboutTopList) animate(aboutTopList, 'animate__zoomIn')
-        // if (aboutTopImg) animate(aboutTopImg, 'animate__zoomIn')
-        // if (aboutBottomList) animate(aboutBottomList, 'animate__backInLeft')
-        // if (aboutBottomRight) animate(aboutBottomRight, 'animate__backInRight')
-        // if (sectionTitleProject) animate(sectionTitleProject, 'animate__zoomIn')
-        // if (projectBlockLeftText) animate(projectBlockLeftText, 'animate__zoomIn')
-        // if (projectBlockRight) animate(projectBlockRight, 'animate__backInRight')
-        // if (sectionTitleFooter) animate(sectionTitleFooter, 'animate__zoomIn')
-        // if (footerContactsPhone) animate(footerContactsPhone, 'animate__zoomIn')
-        // if (footerContactsFrom) animate(footerContactsFrom, 'animate__zoomIn')
-        // if (footerMap) animate(footerMap, 'animate__zoomIn')
-        // if (aboutTopLeft) animate(aboutTopLeft, 'animate__backInLeft')
-        // if (projectBlockLeftImg) animate(projectBlockLeftImg, 'animate__backInLeft')
-        // if (projectBlockCenterImg) animate(projectBlockCenterImg, 'animate__zoomIn')
-    // });
 });

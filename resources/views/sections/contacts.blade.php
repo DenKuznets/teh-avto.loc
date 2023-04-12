@@ -4,7 +4,7 @@
    <div class="ellipse ellipse3"></div>
 
    <div class="contacts__content">
-     <div class="contacts-text">
+     <div class="contacts__text">
        <h2>Контакты</h2>
        <div class="contacts_cards">
          <div class="contacts__card">
