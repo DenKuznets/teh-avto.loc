@@ -1,6 +1,7 @@
 import Swiper, { Autoplay, Navigation } from "swiper";
 import "swiper/css/bundle";
 
+
 //certificates SWIPER
 if (document.querySelector(".mySwiper")) {
     const swiper = new Swiper(".mySwiper", {
@@ -27,7 +28,7 @@ if (document.querySelector(".mySwiper")) {
         //     el: ".swiper-scrollbar",
         // },
         breakpoints: {
-            1919: {
+            1290: {
                 slidesPerView: 4,
                 spaceBetween: 30,
             },
@@ -35,7 +36,7 @@ if (document.querySelector(".mySwiper")) {
                 slidesPerView: 3,
                 spaceBetween: 50,
             },
-            700: {
+            600: {
                 slidesPerView: 2.4,
                 spaceBetween: 50,
             },

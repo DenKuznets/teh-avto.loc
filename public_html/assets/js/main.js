@@ -126,6 +126,13 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   //tech-auto animations
+  // basic class
+  var animateClass = 'animate_animated';
+  // delays
+  var delay03 = "animate__delay-03s";
+  var delay06 = 'animate__delay-06s';
+  var delay09 = "animate__delay-09s";
+
   // #hero
   var heroText = document.querySelector(".hero__text");
   var zoomIn = "animate__zoomIn";
@@ -137,6 +144,7 @@ document.addEventListener("DOMContentLoaded", function () {
       for (_iterator.s(); !(_step = _iterator.n()).done;) {
         var elem = _step.value;
         // console.log(elem);
+        elem.classList.add(animateClass);
         elem.classList.add(zoomIn);
         // animate(elem, "animate__zoomIn");
       }
@@ -152,25 +160,49 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // animate__backInDown
-  var firstScreenTitle = document.querySelectorAll(".first-screen__title");
-  var firstScreenContainer = document.querySelectorAll(".first-screen__container");
-  var firstScreenButton = document.querySelectorAll(".first-screen__button");
-  var sectionTitleAbout = document.querySelectorAll(".section-title__about");
-  var aboutTopList = document.querySelectorAll(".about__top-list");
-  var aboutTopImg = document.querySelectorAll(".about__top-img");
-  var aboutBottomList = document.querySelectorAll(".about__bottom-list");
-  var aboutBottomRight = document.querySelectorAll(".about__bottom-right");
-  var sectionTitleProject = document.querySelectorAll(".section-title__project");
-  var projectBlockLeftText = document.querySelectorAll(".project__block-left-text");
-  var projectBlockRight = document.querySelectorAll(".project__block-right");
-  var sectionTitleFooter = document.querySelectorAll(".section-title__footer");
-  var footerContactsPhone = document.querySelectorAll(".footer__contacts-phone");
-  var footerContactsEmail = document.querySelectorAll(".footer__contacts-email");
-  var footerContactsFrom = document.querySelectorAll(".footer__contacts-from");
-  var footerMap = document.querySelectorAll(".footer__map");
-  var aboutTopLeft = document.querySelectorAll(".about__top-left");
-  var projectBlockLeftImg = document.querySelectorAll(".project__block-left-img");
-  var projectBlockCenterImg = document.querySelectorAll(".project__block-center-img");
+  // const firstScreenTitle = document.querySelectorAll(".first-screen__title");
+  // const firstScreenContainer = document.querySelectorAll(
+  //     ".first-screen__container"
+  // );
+  // const firstScreenButton = document.querySelectorAll(
+  //     ".first-screen__button"
+  // );
+  // const sectionTitleAbout = document.querySelectorAll(
+  //     ".section-title__about"
+  // );
+  // const aboutTopList = document.querySelectorAll(".about__top-list");
+  // const aboutTopImg = document.querySelectorAll(".about__top-img");
+  // const aboutBottomList = document.querySelectorAll(".about__bottom-list");
+  // const aboutBottomRight = document.querySelectorAll(".about__bottom-right");
+  // const sectionTitleProject = document.querySelectorAll(
+  //     ".section-title__project"
+  // );
+  // const projectBlockLeftText = document.querySelectorAll(
+  //     ".project__block-left-text"
+  // );
+  // const projectBlockRight = document.querySelectorAll(
+  //     ".project__block-right"
+  // );
+  // const sectionTitleFooter = document.querySelectorAll(
+  //     ".section-title__footer"
+  // );
+  // const footerContactsPhone = document.querySelectorAll(
+  //     ".footer__contacts-phone"
+  // );
+  // const footerContactsEmail = document.querySelectorAll(
+  //     ".footer__contacts-email"
+  // );
+  // const footerContactsFrom = document.querySelectorAll(
+  //     ".footer__contacts-from"
+  // );
+  // const footerMap = document.querySelectorAll(".footer__map");
+  // const aboutTopLeft = document.querySelectorAll(".about__top-left");
+  // const projectBlockLeftImg = document.querySelectorAll(
+  //     ".project__block-left-img"
+  // );
+  // const projectBlockCenterImg = document.querySelectorAll(
+  //     ".project__block-center-img"
+  // );
 
   // if (firstScreenTitle) animate(firstScreenTitle, 'animate__zoomIn')
   // if (firstScreenContainer) animate(firstScreenContainer, 'animate__zoomIn')
@@ -192,26 +224,26 @@ document.addEventListener("DOMContentLoaded", function () {
   // if (projectBlockLeftImg) animate(projectBlockLeftImg, 'animate__backInLeft')
   // if (projectBlockCenterImg) animate(projectBlockCenterImg, 'animate__zoomIn')
 
-  window.addEventListener("scroll", function () {
-    // if (firstScreenTitle) animate(firstScreenTitle, 'animate__zoomIn')
-    // if (firstScreenContainer) animate(firstScreenContainer, 'animate__zoomIn')
-    // if (firstScreenButton) animate(firstScreenButton, 'animate__zoomIn')
-    // if (sectionTitleAbout) animate(sectionTitleAbout, 'animate__zoomIn')
-    // if (aboutTopList) animate(aboutTopList, 'animate__zoomIn')
-    // if (aboutTopImg) animate(aboutTopImg, 'animate__zoomIn')
-    // if (aboutBottomList) animate(aboutBottomList, 'animate__backInLeft')
-    // if (aboutBottomRight) animate(aboutBottomRight, 'animate__backInRight')
-    // if (sectionTitleProject) animate(sectionTitleProject, 'animate__zoomIn')
-    // if (projectBlockLeftText) animate(projectBlockLeftText, 'animate__zoomIn')
-    // if (projectBlockRight) animate(projectBlockRight, 'animate__backInRight')
-    // if (sectionTitleFooter) animate(sectionTitleFooter, 'animate__zoomIn')
-    // if (footerContactsPhone) animate(footerContactsPhone, 'animate__zoomIn')
-    // if (footerContactsFrom) animate(footerContactsFrom, 'animate__zoomIn')
-    // if (footerMap) animate(footerMap, 'animate__zoomIn')
-    // if (aboutTopLeft) animate(aboutTopLeft, 'animate__backInLeft')
-    // if (projectBlockLeftImg) animate(projectBlockLeftImg, 'animate__backInLeft')
-    // if (projectBlockCenterImg) animate(projectBlockCenterImg, 'animate__zoomIn')
-  });
+  // window.addEventListener("scroll", () => {
+  // if (firstScreenTitle) animate(firstScreenTitle, 'animate__zoomIn')
+  // if (firstScreenContainer) animate(firstScreenContainer, 'animate__zoomIn')
+  // if (firstScreenButton) animate(firstScreenButton, 'animate__zoomIn')
+  // if (sectionTitleAbout) animate(sectionTitleAbout, 'animate__zoomIn')
+  // if (aboutTopList) animate(aboutTopList, 'animate__zoomIn')
+  // if (aboutTopImg) animate(aboutTopImg, 'animate__zoomIn')
+  // if (aboutBottomList) animate(aboutBottomList, 'animate__backInLeft')
+  // if (aboutBottomRight) animate(aboutBottomRight, 'animate__backInRight')
+  // if (sectionTitleProject) animate(sectionTitleProject, 'animate__zoomIn')
+  // if (projectBlockLeftText) animate(projectBlockLeftText, 'animate__zoomIn')
+  // if (projectBlockRight) animate(projectBlockRight, 'animate__backInRight')
+  // if (sectionTitleFooter) animate(sectionTitleFooter, 'animate__zoomIn')
+  // if (footerContactsPhone) animate(footerContactsPhone, 'animate__zoomIn')
+  // if (footerContactsFrom) animate(footerContactsFrom, 'animate__zoomIn')
+  // if (footerMap) animate(footerMap, 'animate__zoomIn')
+  // if (aboutTopLeft) animate(aboutTopLeft, 'animate__backInLeft')
+  // if (projectBlockLeftImg) animate(projectBlockLeftImg, 'animate__backInLeft')
+  // if (projectBlockCenterImg) animate(projectBlockCenterImg, 'animate__zoomIn')
+  // });
 });
 
 /***/ }),
@@ -413,7 +445,7 @@ if (document.querySelector(".mySwiper")) {
     //     el: ".swiper-scrollbar",
     // },
     breakpoints: {
-      1919: {
+      1290: {
         slidesPerView: 4,
         spaceBetween: 30
       },
@@ -421,7 +453,7 @@ if (document.querySelector(".mySwiper")) {
         slidesPerView: 3,
         spaceBetween: 50
       },
-      700: {
+      600: {
         slidesPerView: 2.4,
         spaceBetween: 50
       },

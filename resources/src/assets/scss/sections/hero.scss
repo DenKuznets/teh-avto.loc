@@ -71,6 +71,8 @@
 .hero__image {
   flex: 1;
   max-width: 550px;
+  display: flex;
+  align-items: center;
 
   @media (max-width: $px768) {
     width: 100%;
@@ -109,9 +111,11 @@
 .hero-dot3 {
   left: 11.5vw;
   top: 0vh;
+
   @media (max-width: 1450px) {
     left: 4%;
   }
+
   @media (max-width: 1320px) {
     display: none;
   }
