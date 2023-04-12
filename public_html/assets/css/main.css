@@ -1069,7 +1069,6 @@ footer {
 
 .swiper-wrapper {
   margin: 0 auto;
-  overflow: hidden;
 }
 
 #contacts {
@@ -1138,7 +1137,7 @@ footer {
   transition: all 0.2s;
 }
 .icons-container img:hover {
-  opacity: 0.95;
+  transform: scale(1.05);
 }
 
 .contacts__map {

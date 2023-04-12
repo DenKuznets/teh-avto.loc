@@ -109,7 +109,7 @@
 
   img {
     &:hover {
-      opacity: 0.95;
+      transform: scale(1.05);
     }
   }
 }
