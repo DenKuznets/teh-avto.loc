@@ -296,27 +296,29 @@ document.getElementById("popup").addEventListener("click", function (e) {
 // открытие попапа
 function openPopup() {
   document.getElementById("popup").classList.add("popup-show");
-  document.body.classList.add("modal-open");
+  document.body.classList.toggle("modal-open");
 }
 
 // закрыть попап
 function closePopup() {
   document.getElementById("popup").classList.remove("popup-show");
-  document.body.classList.remove("modal-open");
+  document.body.classList.toggle("modal-open");
 }
 
 // бургер нажатие
 var burger = document.querySelector(".burger");
 var closeBtn = document.querySelector(".mobile-menu__close-btn");
 var phone = document.querySelector(".header__phone");
+var logo = document.querySelector(".header__logo");
 burger.addEventListener("click", function () {
   var nav = document.querySelector(".nav__list-header");
   nav.classList.add("mobile-nav-active");
   burger.classList.remove("burger-show");
   burger.classList.add("burger-hide");
   closeBtn.classList.toggle("mobile-menu__close-btn-active");
-  // console.log(phone);
   phone.classList.toggle("header__phone-mobile");
+  logo.classList.toggle("header__logo-fixed");
+  document.body.classList.toggle("modal-open");
 });
 
 // кнопка закрыть мобильное меню нажатие
@@ -346,6 +348,8 @@ function closeMobileMenu() {
     burger.classList.add("burger-show");
     burger.classList.remove("burger-hide");
     phone.classList.toggle("header__phone-mobile");
+    logo.classList.toggle("header__logo-fixed");
+    document.body.classList.toggle("modal-open");
   }
 }
 

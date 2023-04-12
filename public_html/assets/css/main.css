@@ -618,8 +618,13 @@ body.modal-open {
   max-width: unset;
 }
 
+.header__logo-fixed {
+  position: fixed;
+  top: 10px;
+  left: 30px;
+}
+
 .header__phone {
-  transition: all 0.2s;
   font-style: normal;
   font-weight: 800;
   font-size: 24px;
