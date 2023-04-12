@@ -8,7 +8,7 @@
         <div class="footer-top__nav">
             <ul class="nav nav__list-footer">
                 <li class="nav__item-footer">
-                    <a href="#">
+                    <a href="#about">
                         О компании
                     </a>
                 </li>

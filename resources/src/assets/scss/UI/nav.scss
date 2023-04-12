@@ -1,4 +1,4 @@
-.header__top-nav {
+.header__nav {
   display: flex;
   justify-content: space-between;
   max-width: 617px;
@@ -46,10 +46,6 @@
 }
 
 .nav__item-header {
-  white-space: nowrap;
-}
-
-.header__top-contacts-phone {
   white-space: nowrap;
 }
 

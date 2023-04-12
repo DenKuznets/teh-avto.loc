@@ -1,17 +1,20 @@
 .mobile-menu__close-btn {
   display: none;
+  position: fixed;
+  top: 15px;
+  right: 20px;
   background-color: #00110A;
-  position: relative;
-  z-index: 2;
-  @media (max-width: $px768) {  
-      &-active {
-        display: block;
-      }
-    }
-    img {
-      width: 30px;
-      height: 30px;
-      max-width: unset;
-    }
-}
+  z-index: 4;
 
+  @media (max-width: $px768) {
+    &-active {
+      display: block;
+    }
+  }
+
+  img {
+    width: 30px;
+    height: 30px;
+    max-width: unset;
+  }
+}
