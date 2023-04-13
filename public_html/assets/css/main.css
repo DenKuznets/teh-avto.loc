@@ -851,7 +851,6 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 90px;
 }
 #services .ellipse2 {
   left: 7%;
@@ -864,35 +863,17 @@ footer {
 
 .services__content {
   width: 100%;
-  max-width: 1350px;
-  position: relative;
-  left: 20px;
-}
-.services__content h2 {
-  font-family: "Alumni Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 58px;
-  padding-left: 15px;
+  max-width: 1290px;
+  margin-top: 90px;
 }
 .services__content h4 {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
   line-height: 140%;
   max-width: 410px;
   min-width: 410px;
   margin-right: 40px;
 }
 .services__content p {
-  font-family: "Open Sans";
   max-width: 620px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 140%;
 }
 
 .services__cards {
@@ -900,49 +881,47 @@ footer {
   flex-direction: column;
   margin-top: 40px;
   width: 100%;
-  left: -15px;
-  top: -10px;
-  position: relative;
 }
 
 .services__card {
   display: flex;
-  padding: 20px 30px;
+  padding: 20px 0;
   width: 100%;
   transition: all 0.2s;
-  border-radius: 8px;
   position: relative;
+  border-radius: 8px;
 }
+.services__card:hover {
+  background: #00AE31;
+  box-shadow: 30px 0px #00AE31, -30px 0px #00AE31;
+}
+.services__card:hover button {
+  visibility: visible;
+}
+
 .services__card__btn-cta {
+  visibility: hidden;
+  border-radius: 8px;
+  height: 55px;
+  position: relative;
   display: block;
   width: 181px;
   height: 55px;
   border-radius: 8px;
-  border: 1px solid #00AE31;
+  border: 1px solid white;
   font-family: "Alumni Sans";
   font-style: normal;
   font-weight: 800;
   font-size: 24px;
   line-height: 29px;
   cursor: pointer;
-  background: -webkit-linear-gradient(93.58deg, #00AA30 0%, #00D03A 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background: none;
+  color: white;
+  transition: all 0.2s;
 }
 .services__card__btn-cta:hover {
   background: #FFFFFF;
   color: #00AE31;
-  background-clip: inherit;
-  -webkit-background-clip: inherit;
-  -webkit-text-fill-color: inherit;
-  border: none;
-}
-.services__card:hover {
-  background: #00AE31;
-}
-.services__card:hover .btn-bg {
-  visibility: visible;
 }
 
 .services__card-text {
@@ -954,14 +933,6 @@ footer {
   top: -8.6vh;
   right: 0.8vw;
   opacity: 0.6;
-}
-
-.btn-bg {
-  visibility: hidden;
-  background-color: #FFFFFF;
-  border-radius: 8px;
-  height: 55px;
-  position: relative;
 }
 
 #stages {
@@ -1528,7 +1499,7 @@ footer {
     flex-direction: column;
     align-items: flex-start;
   }
-  .btn-bg {
+  .services__card__btn-cta {
     visibility: visible;
     margin-top: 40px;
   }
@@ -1624,16 +1595,8 @@ footer {
   }
   .services__content {
     text-align: center;
-    left: unset;
   }
-  .services__content h2 {
-    padding-left: unset;
-  }
-  .services__cards {
-    left: unset;
-    top: unset;
-  }
-  .btn-bg {
+  .services__card__btn-cta {
     margin-left: auto;
     margin-right: auto;
   }

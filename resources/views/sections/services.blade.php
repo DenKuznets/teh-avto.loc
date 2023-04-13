@@ -4,7 +4,7 @@
   <img src="{{ asset('assets/img/services-dots.svg') }}" alt="" class="dot services-dot1">
   <div class="services__content">
     <h2>Услуги</h2>
-    <div class="services__cards">
+    <div class="services__cards">      
       <div class="services__card">
         <div class="services__card-text">
           <h4>Выдача документов на переоборудование любых транспортных средств</h4>
@@ -15,9 +15,7 @@
             и наоборот
           </p>
         </div>
-        <div class="btn-bg">
-          <button class="services__card__btn-cta">Оставить заявку</button>
-        </div>
+        <button class="services__card__btn-cta">Оставить заявку</button>
       </div>
       <div class="services__card">
         <div class="services__card-text">
@@ -29,9 +27,9 @@
             измерений
             в РЭП ГИБДД</p>
         </div>
-        <div class="btn-bg">
-          <button class="services__card__btn-cta">Оставить заявку</button>
-        </div>
+
+        <button class="services__card__btn-cta">Оставить заявку</button>
+
       </div>
       <div class="services__card">
         <div class="services__card-text">
@@ -40,9 +38,9 @@
             пневмоподвески, установка
             дополнительного оборудования и многое другое.</p>
         </div>
-        <div class="btn-bg">
-          <button class="services__card__btn-cta">Оставить заявку</button>
-        </div>
+
+        <button class="services__card__btn-cta">Оставить заявку</button>
+
       </div>
       <div class="services__card">
         <div class="services__card-text">
@@ -52,9 +50,9 @@
             консультацию от наших
             специалистов.</p>
         </div>
-        <div class="btn-bg">
-          <button class="services__card__btn-cta">Оставить заявку</button>
-        </div>
+
+        <button class="services__card__btn-cta">Оставить заявку</button>
+
       </div>
 
     </div>
