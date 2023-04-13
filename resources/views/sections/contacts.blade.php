@@ -23,10 +23,8 @@
         </div>
         <div class="contacts__card">
           <p>Режим работы</p>
-          <span>
-            <a href="">
-              Ежедневно с 7:00 до 23:00 (UTC +3)
-            </a>
+          <span>            
+              Ежедневно с 7:00 до 23:00 (UTC +3)            
           </span>
         </div>
         <div class="contacts__card">

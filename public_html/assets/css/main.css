@@ -733,6 +733,7 @@ footer {
 }
 
 .section {
+  outline: 1px solid red;
   min-height: 500px;
   position: relative;
   padding: 0 30px;
@@ -756,7 +757,7 @@ footer {
 }
 
 .hero__text {
-  margin-top: 150px;
+  margin: auto 0;
   flex: 1;
   max-width: 639px;
 }
@@ -1021,6 +1022,7 @@ footer {
 }
 
 .about__content {
+  margin-top: 25px;
   display: flex;
   justify-content: center;
   max-width: 1290px;
@@ -1029,13 +1031,12 @@ footer {
 
 .about__text {
   max-width: 630px;
-  margin-top: 45px;
+  margin: auto 0;
   flex: 1;
 }
 
 .about__image {
   flex: 1;
-  margin-top: 25px;
   max-width: 630px;
   display: flex;
   align-items: center;
@@ -1043,10 +1044,12 @@ footer {
 .about__image img {
   position: relative;
   width: 100%;
-  height: auto;
+  height: 100%;
   border-radius: 8px;
   -o-object-position: 0 0;
   object-position: 0 0;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .about-dot1 {
@@ -1059,7 +1062,6 @@ footer {
   padding-bottom: 45px;
 }
 #certificate h2 {
-  margin-top: 90px;
   margin-bottom: 40px;
 }
 #certificate .ellipse2 {
@@ -1070,6 +1072,7 @@ footer {
 .certificate__content {
   max-width: 1290px;
   margin: 0 auto;
+  margin-top: 90px;
 }
 
 .certificate__card {
@@ -1385,16 +1388,9 @@ footer {
   .about__content {
     margin-top: 70px;
   }
-  .about__text {
-    margin-top: 30px;
-  }
-  .about__image {
-    height: 406px;
-  }
   .about__image img {
     -o-object-fit: cover;
     object-fit: cover;
-    height: 406px;
   }
   #contacts {
     justify-content: flex-start;
@@ -1555,10 +1551,6 @@ footer {
   .about__image {
     max-width: unset;
     margin-top: unset;
-    height: 500px;
-  }
-  .about__image img {
-    height: 500px;
   }
   #certificate {
     padding-right: 0;
@@ -1665,11 +1657,6 @@ footer {
   #about p {
     text-align: center;
   }
-  .about__image img {
-    height: 400px;
-    -o-object-position: 40% 0%;
-    object-position: 40% 0%;
-  }
   #certificate h2 {
     text-align: center;
   }
@@ -1705,11 +1692,6 @@ footer {
   }
   #stages h4 br {
     display: block;
-  }
-  .about__image img {
-    height: 300px;
-    -o-object-position: 40% 0%;
-    object-position: 40% 0%;
   }
   .contacts__card {
     flex-direction: column;

@@ -6,7 +6,7 @@
   }
 
   h2 {
-    margin-top: 90px;
+    
     margin-bottom: 40px;
 
     @media (max-width: $px480) {
@@ -23,6 +23,7 @@
 .certificate__content {
   max-width: 1290px;
   margin: 0 auto;
+  margin-top: 90px;
 }
 
 .certificate__card {
