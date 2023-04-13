@@ -591,14 +591,15 @@ body.modal-open {
 .header {
   background-color: #00110A;
   color: #fff;
-  padding: 10px 0;
   position: fixed;
+  top: 0;
   width: 100%;
   z-index: 3;
   display: flex;
 }
 
 .header__content {
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -734,7 +735,6 @@ footer {
 }
 
 .section {
-  outline: 1px solid red;
   position: relative;
   padding: 0 30px;
 }
@@ -751,9 +751,8 @@ footer {
   display: flex;
   justify-content: center;
   gap: 101px;
-  padding-top: 80px;
-  padding-bottom: 100px;
   position: relative;
+  margin-top: 80px;
 }
 
 .hero__text {
@@ -782,8 +781,10 @@ footer {
 .hero__image img {
   position: relative;
   width: 100%;
-  height: auto;
+  height: 100%;
   border-radius: 8px;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .hero-dot1 {
@@ -817,6 +818,7 @@ footer {
   max-width: 1290px;
   position: relative;
   left: -20px;
+  margin-top: 100px;
 }
 
 .advantages__card {
@@ -1087,7 +1089,6 @@ footer {
 
 .mySwiper {
   width: 100%;
-  outline: 1px solid red;
 }
 
 #contacts {
@@ -1344,16 +1345,11 @@ footer {
   .hero__content {
     gap: 20px;
   }
-  .hero__text {
-    margin-top: 93px;
-  }
   .hero__text h1 {
     margin-bottom: 32px;
   }
-  .hero__image img {
-    height: 500px;
-    -o-object-fit: cover;
-    object-fit: cover;
+  .hero__image {
+    min-height: 500px;
   }
   .advantages__cards {
     left: 0;
@@ -1406,7 +1402,8 @@ footer {
 
 @media (max-width: 850px){
   .header {
-    position: relative;
+    position: absolute;
+    top: -80px;
   }
   .header__phone {
     margin-right: 50px;
@@ -1503,7 +1500,6 @@ footer {
     gap: 50px;
   }
   .hero__text {
-    margin-top: 30px;
     max-width: unset;
   }
   .hero__image {
@@ -1691,8 +1687,8 @@ footer {
     font-size: 40px;
     line-height: 48px;
   }
-  .hero__image img {
-    height: 400px;
+  .hero__image {
+    min-height: 400px;
   }
   #stages h4 br {
     display: block;

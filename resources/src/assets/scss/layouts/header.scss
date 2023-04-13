@@ -1,21 +1,21 @@
 .header {
   background-color: #00110A;
   color: #fff;
-  padding: 10px 0;
   position: fixed;
+  top: 0;  
   width: 100%;
   z-index: 3;
   display: flex;
-  // justify-content: space-between;
 
   @media (max-width: $px850) {
-    position: relative;
-    // z-index: inherit;
+    position: absolute;
+    top: -80px;
   }
 }
 
 
 .header__content {
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
