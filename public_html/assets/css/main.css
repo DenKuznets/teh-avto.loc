@@ -851,6 +851,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 60px;
 }
 #services .ellipse2 {
   left: 7%;
@@ -899,9 +900,19 @@ footer {
   visibility: visible;
 }
 
+.services__card-text {
+  display: flex;
+  margin-right: auto;
+}
+
+.services-dot1 {
+  top: -8.6vh;
+  right: 0.8vw;
+  opacity: 0.6;
+}
+
 .services__card__btn-cta {
   visibility: hidden;
-  border-radius: 8px;
   height: 55px;
   position: relative;
   display: block;
@@ -917,22 +928,18 @@ footer {
   cursor: pointer;
   background: none;
   color: white;
-  transition: all 0.2s;
+  transition: background 0.2s, color 0, 2s;
+  white-space: nowrap;
+  padding: 12px 24px 14px;
+  z-index: 1;
 }
 .services__card__btn-cta:hover {
   background: #FFFFFF;
   color: #00AE31;
 }
 
-.services__card-text {
-  display: flex;
-  margin-right: auto;
-}
-
-.services-dot1 {
-  top: -8.6vh;
-  right: 0.8vw;
-  opacity: 0.6;
+.button-bg {
+  margin-left: 10px;
 }
 
 #stages {
@@ -1499,8 +1506,29 @@ footer {
     flex-direction: column;
     align-items: flex-start;
   }
+  .services__card:hover {
+    background: none;
+    box-shadow: none;
+  }
   .services__card__btn-cta {
     visibility: visible;
+    background: linear-gradient(93.58deg, #00AA30 0%, #00D03A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .services__card__btn-cta:hover {
+    background: linear-gradient(93.58deg, #00AA30 0%, #00D03A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .button-bg {
+    background-color: white;
+    height: 55px;
+    border-radius: 8px;
     margin-top: 40px;
   }
   #about {
@@ -1593,10 +1621,20 @@ footer {
     top: -53px;
     left: -60px;
   }
+  #services {
+    padding: 0 20px;
+  }
   .services__content {
     text-align: center;
   }
+  .services__card {
+    padding: 20px 30px;
+  }
   .services__card__btn-cta {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .button-bg {
     margin-left: auto;
     margin-right: auto;
   }
@@ -1652,6 +1690,9 @@ footer {
   }
   .hero__image {
     min-height: 400px;
+  }
+  .services__content {
+    overflow-wrap: anywhere;
   }
   #stages h4 br {
     display: block;

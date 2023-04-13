@@ -2,6 +2,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 60px;
+
+  @media (max-width: $px480) {
+    padding: 0 20px;
+  }
 
   .ellipse2 {
     left: 7%;
@@ -22,6 +27,11 @@
   @media (max-width: $px480) {
     text-align: center;
   }
+
+  @media (max-width: $px360) {
+    overflow-wrap: anywhere;
+  }
+
 
 
   h4 {
@@ -67,50 +77,24 @@
   @media (max-width: $px768) {
     flex-direction: column;
     align-items: flex-start;
+
+    &:hover {
+      background: none;
+      box-shadow: none;
+    }
+  }
+
+  @media (max-width: $px480) {
+    padding: 20px 30px;
   }
 
   &:hover {
     background: #00AE31;
     box-shadow: 30px 0px #00AE31, -30px 0px #00AE31;
-    button{
+
+    button {
       visibility: visible;
     }
-  }
-}
-
-.services__card__btn-cta {
-  visibility: hidden;
-  border-radius: 8px;
-  height: 55px;
-  position: relative;
-  display: block;
-  width: 181px;
-  height: 55px;
-  border-radius: 8px;
-  border: 1px solid white;
-  font-family: 'Alumni Sans';
-  font-style: normal;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 29px;
-  cursor: pointer;
-  background: none;
-  color: white;
-  transition: all 0.2s;
-
-  @media (max-width: $px768) {
-    visibility: visible;
-    margin-top: 40px;
-  }
-
-  @media (max-width: $px480) {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  &:hover {
-    background: #FFFFFF;
-    color: #00AE31;  
   }
 }
 
@@ -133,4 +117,74 @@
   top: -8.6vh;
   right: 0.8vw;
   opacity: 0.6;
+}
+
+.services__card__btn-cta {
+  visibility: hidden;
+  height: 55px;
+  position: relative;
+  display: block;
+  width: 181px;
+  height: 55px;
+  border-radius: 8px;
+  border: 1px solid white;
+  font-family: 'Alumni Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;
+  cursor: pointer;
+  background: none;
+  color: white;
+  transition: background 0.2s, color 0, 2s;
+  white-space: nowrap;
+  padding: 12px 24px 14px;
+  z-index: 1;
+
+
+  @media (max-width: $px768) {
+    visibility: visible;
+
+    background: linear-gradient(93.58deg, #00AA30 0%, #00D03A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+    &:hover {
+      background: linear-gradient(93.58deg, #00AA30 0%, #00D03A 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+  }
+
+  @media (max-width: $px480) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &:hover {
+    background: #FFFFFF;
+    color: #00AE31;
+  }
+}
+
+.button-bg {
+  margin-left: 10px;
+
+  @media (max-width: $px768) {
+    background-color: white;
+    height: 55px;
+    border-radius: 8px;
+    margin-top: 40px;
+  }
+
+  @media (max-width: $px480) {
+    margin-left: auto;
+    ;
+    margin-right: auto;
+    ;
+  }
 }
