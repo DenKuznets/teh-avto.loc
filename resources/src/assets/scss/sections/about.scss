@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   min-height: unset;
- 
+
 
   @media (max-width: $px768) {
     justify-content: flex-start;
@@ -52,7 +52,7 @@
 .about__text {
   max-width: 630px;
   margin: auto 0;
-  flex: 1;  
+  flex: 1;
 
   @media (max-width: $px768) {
     max-width: unset;
@@ -70,7 +70,17 @@
   @media (max-width: $px768) {
     max-width: unset;
     margin-top: unset;
-    // height: 500px;
+    min-height: 500px;
+  }
+
+  @media (max-width: $px768) {}
+
+  @media (max-width: $px480) {
+    min-height: 400px;
+  }
+
+  @media (max-width: $px360) {
+    min-height: 300px;
   }
 
 
@@ -82,23 +92,7 @@
     object-position: 0 0;
     object-fit: cover;
 
-    @media (max-width: $px1024) {
-      object-fit: cover;
-    }
 
-    // @media (max-width: $px768) {
-    //   height: 500px;
-    // }
-
-    // @media (max-width: $px480) {
-    //   height: 400px;
-    //   object-position: 40% 0%;
-    // }
-
-    // @media (max-width: $px360) {
-    //   height: 300px;
-    //   object-position: 40% 0%;
-    // }
   }
 }
 

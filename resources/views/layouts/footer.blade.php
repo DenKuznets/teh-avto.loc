@@ -26,8 +26,8 @@
         <a id="policy" href="">
             <p>Политика конфиденциальности</p>
         </a>
-        <p>Сайт разработан компанией
-            <a target="_blank" id="alexmedia" href="https://alex-media.ru/">ALEX–MEDIA</a>
+        <p id="alexmedia">Сайт разработан компанией
+            <a target="_blank" href="https://alex-media.ru/">ALEX–MEDIA</a>
         </p>
 
     </div>

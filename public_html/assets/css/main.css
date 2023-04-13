@@ -621,7 +621,7 @@ body.modal-open {
 .header__logo-fixed {
   position: fixed;
   top: 10px;
-  left: 30px;
+  left: 20px;
 }
 
 .header__phone {
@@ -631,6 +631,7 @@ body.modal-open {
   line-height: 29px;
   transition: all 0.4s;
   white-space: nowrap;
+  transition: all 0.4s;
 }
 
 .header__phone-mobile {
@@ -1385,10 +1386,6 @@ footer {
   .about__content {
     margin-top: 70px;
   }
-  .about__image img {
-    -o-object-fit: cover;
-    object-fit: cover;
-  }
   #contacts {
     justify-content: flex-start;
     width: 100%;
@@ -1408,6 +1405,9 @@ footer {
 }
 
 @media (max-width: 850px){
+  .header {
+    position: relative;
+  }
   .header__phone {
     margin-right: 50px;
   }
@@ -1440,6 +1440,9 @@ footer {
   .burger-show {
     display: block;
   }
+  .mobile-menu__close-btn-active {
+    display: block;
+  }
 }
 
 @media (max-width: 768px){
@@ -1448,9 +1451,6 @@ footer {
     font-size: 60px;
     line-height: 72px;
     text-align: center;
-  }
-  .header {
-    position: relative;
   }
   .header__content {
     justify-content: flex-start;
@@ -1494,7 +1494,7 @@ footer {
     column-gap: 7%;
   }
   .section {
-    padding: 0 19px;
+    padding: 0 20px;
   }
   .hero__content {
     flex-direction: column;
@@ -1549,12 +1549,10 @@ footer {
   .about__image {
     max-width: unset;
     margin-top: unset;
+    min-height: 500px;
   }
   #certificate {
     padding-right: 0;
-  }
-  .mobile-menu__close-btn-active {
-    display: block;
   }
 }
 
@@ -1655,6 +1653,9 @@ footer {
   #about p {
     text-align: center;
   }
+  .about__image {
+    min-height: 400px;
+  }
   #certificate h2 {
     text-align: center;
   }
@@ -1671,8 +1672,16 @@ footer {
 
 @media (max-width: 420px){
   .header__phone {
-    display: none;
+    position: fixed;
+    top: -40%;
+    left: 50%;
+    transform: translate(-50%);
     margin-right: 10px;
+  }
+  .header__phone-mobile {
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%);
   }
 }
 
@@ -1682,14 +1691,14 @@ footer {
     font-size: 40px;
     line-height: 48px;
   }
-  .section {
-    padding: 0 15px;
-  }
   .hero__image img {
     height: 400px;
   }
   #stages h4 br {
     display: block;
+  }
+  .about__image {
+    min-height: 300px;
   }
   .contacts__card {
     flex-direction: column;
