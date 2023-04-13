@@ -13,7 +13,7 @@
       <button id="hero-btn" class="btn btn-cta">Оставить заявку</button>
 
     </div>
-    <div class="hero__image animate_animated">
+    <div class="hero__image">
       <img src="{{ asset('assets/img/hero-img.png') }}" alt="">
     </div>
   </div>
