@@ -1518,6 +1518,7 @@ footer {
     flex-direction: row;
     max-width: unset;
     width: 100%;
+    align-items: center;
   }
   .advantages__card h4 {
     width: 100%;
