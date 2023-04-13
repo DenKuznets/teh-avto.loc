@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   //tech-auto animations
   // basic class
-  var animateClass = "animate_animated";
+  var animateClass = "animate__animated";
   // delays
   var delay03 = "animate__delay-03s";
   var delay06 = "animate__delay-06s";

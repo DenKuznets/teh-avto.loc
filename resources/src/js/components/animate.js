@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     //tech-auto animations
     // basic class
-    const animateClass = "animate_animated";
+    const animateClass = "animate__animated";
     // delays
     const delay03 = "animate__delay-03s";
     const delay06 = "animate__delay-06s";
@@ -43,6 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const flip = "animate__flip";
     const lightSpeedInRight = "animate__lightSpeedInRight";
     const zoomInRight = "animate__zoomInRight";
+
 
     //#contacts
     const contactsText = document.querySelector('.contacts__text');

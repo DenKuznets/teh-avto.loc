@@ -3,16 +3,13 @@
   justify-content: center;
   min-height: unset;
 
+
   @media (max-width: $px768) {
     justify-content: flex-start;
   }
 
   h2 {
-    margin-bottom: 50px;
-
-    @media (max-width: $px1024) {
-      margin-bottom: 40px;
-    }
+    margin-bottom: 40px;
 
     @media (max-width: $px480) {
       text-align: center;
@@ -35,6 +32,7 @@
 }
 
 .about__content {
+  margin-top: 25px;
   display: flex;
   justify-content: center;
   max-width: 1290px;
@@ -42,6 +40,7 @@
 
   @media (max-width: $px1024) {
     margin-top: 70px;
+    // height: 406px;
   }
 
   @media (max-width: $px768) {
@@ -52,12 +51,8 @@
 
 .about__text {
   max-width: 630px;
-  margin-top: 45px;
+  margin: auto 0;
   flex: 1;
-
-  @media (max-width: $px1024) {
-    margin-top: 30px;
-  }
 
   @media (max-width: $px768) {
     max-width: unset;
@@ -66,48 +61,38 @@
 
 .about__image {
   flex: 1;
-  margin-top: 25px;
   max-width: 630px;
   display: flex;
   align-items: center;
 
-  @media (max-width: $px1024) {
-    height: 406px;
 
-  }
 
   @media (max-width: $px768) {
     max-width: unset;
     margin-top: unset;
-    height: 500px;
+    min-height: 500px;
+  }
+
+  @media (max-width: $px768) {}
+
+  @media (max-width: $px480) {
+    min-height: 400px;
+  }
+
+  @media (max-width: $px360) {
+    min-height: 300px;
   }
 
 
   img {
     position: relative;
     width: 100%;
-    height: auto;
+    height: 100%;
     border-radius: 8px;
     object-position: 0 0;
+    object-fit: cover;
 
-    @media (max-width: $px1024) {
-      object-fit: cover;
-      height: 406px;
-    }
 
-    @media (max-width: $px768) {
-      height: 500px;
-    }
-
-    @media (max-width: $px480) {
-      height: 400px;
-      object-position: 40% 0%;
-    }
-
-    @media (max-width: $px360) {
-      height: 300px;
-      object-position: 40% 0%;
-    }
   }
 }
 

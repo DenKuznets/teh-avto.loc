@@ -1,7 +1,6 @@
 #contacts {
   display: flex;
   position: relative;
-  padding-top: 45px;
   padding-bottom: 50px;
   justify-content: center;
   width: 100%;
@@ -27,6 +26,7 @@
   display: flex;
   max-width: 1290px;
   gap: 30px;
+  margin-top: 90px;
   width: 100%;
 
   @media (max-width: $px1024) {
@@ -35,28 +35,20 @@
 }
 
 .contacts__text {
+  margin: auto 0;
   h2 {
-    margin-top: 40px;
-    margin-bottom: 45px;
+    margin-bottom: 40px;
 
     @media (max-width: $px480) {
       text-align: center;
     }
   }
-
-  // @media (max-width: ${screen.screen768}) {
-  //   max-width: 100%;
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-items: center;
-  //   justify-content: center;
-  // }
 }
 
 .contacts_cards {
   display: flex;
   flex-direction: column;
-  gap: 31px;
+  gap: 30px;
 }
 
 .contacts__card {

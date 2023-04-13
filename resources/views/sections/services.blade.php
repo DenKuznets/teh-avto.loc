@@ -15,7 +15,7 @@
             и наоборот
           </p>
         </div>
-        <div class="btn-bg">
+        <div class="button-bg">
           <button class="services__card__btn-cta">Оставить заявку</button>
         </div>
       </div>
@@ -29,7 +29,7 @@
             измерений
             в РЭП ГИБДД</p>
         </div>
-        <div class="btn-bg">
+        <div class="button-bg">
           <button class="services__card__btn-cta">Оставить заявку</button>
         </div>
       </div>
@@ -40,7 +40,7 @@
             пневмоподвески, установка
             дополнительного оборудования и многое другое.</p>
         </div>
-        <div class="btn-bg">
+        <div class="button-bg">
           <button class="services__card__btn-cta">Оставить заявку</button>
         </div>
       </div>
@@ -52,11 +52,10 @@
             консультацию от наших
             специалистов.</p>
         </div>
-        <div class="btn-bg">
+        <div class="button-bg">
           <button class="services__card__btn-cta">Оставить заявку</button>
         </div>
       </div>
-
     </div>
   </div>
 </section>

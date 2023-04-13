@@ -1,21 +1,21 @@
 .header {
   background-color: #00110A;
   color: #fff;
-  padding: 10px 0;
   position: fixed;
+  top: 0;  
   width: 100%;
   z-index: 3;
   display: flex;
-  // justify-content: space-between;
 
-  @media (max-width: $px768) {
-    position: relative;
-    // z-index: inherit;
+  @media (max-width: $px850) {
+    position: absolute;
+    top: -80px;
   }
 }
 
 
 .header__content {
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -47,17 +47,17 @@
 .header__logo-fixed {
   position: fixed;
   top: 10px;
-  left: 30px;
+  left: 20px;
 }
 
 .header__phone {
-  // transition: all 0.2s;
   font-style: normal;
   font-weight: 800;
   font-size: 24px;
   line-height: 29px;
   transition: all 0.4s;
   white-space: nowrap;
+  transition: all 0.4s;
 
   @media (max-width: $px850) {
     margin-right: 50px;
@@ -68,7 +68,10 @@
   }
 
   @media (max-width: 420px) {
-    display: none;
+    position: fixed;
+    top: -40%;
+    left: 50%;
+    transform: translate(-50%);
     margin-right: 10px;
   }
 }
@@ -79,4 +82,10 @@
   left: 50%;
   top: 90%;
   transform: translate(-50%);
+
+  @media (max-width: 420px) {
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%);
+  }
 }

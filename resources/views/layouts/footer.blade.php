@@ -20,13 +20,16 @@
         </div>
     </div>
     <div class="footer-bottom">
-        <p id="rights">© <?php echo date("Y") ?> , Все права защищены</p>
+        <p id="rights">©
+            <?php echo date("Y") ?> , Все права защищены
+        </p>
         <a id="policy" href="">
             <p>Политика конфиденциальности</p>
         </a>
-        <a id="alexmedia" href="https://alex-media.ru/">
-            <p>Сайт разработан компанией ALEX–MEDIA</p>
-        </a>
+        <p id="alexmedia">Сайт разработан компанией
+            <a target="_blank" href="https://alex-media.ru/">ALEX–MEDIA</a>
+        </p>
+
     </div>
 </footer>
 

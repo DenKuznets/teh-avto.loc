@@ -2,7 +2,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 90px;
+  padding: 0 60px;
+
+  @media (max-width: $px480) {
+    padding: 0 20px;
+  }
 
   .ellipse2 {
     left: 7%;
@@ -17,33 +21,20 @@
 
 .services__content {
   width: 100%;
-  max-width: 1350px;
-  position: relative;
-  left: 20px;
+  max-width: 1290px;
+  margin-top: 90px;
 
   @media (max-width: $px480) {
     text-align: center;
-    left: unset;
   }
 
-  h2 {
-    font-family: 'Alumni Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 58px;
-    padding-left: 15px;
-
-    @media (max-width: $px480) {
-      padding-left: unset;
-    }
+  @media (max-width: $px360) {
+    overflow-wrap: anywhere;
   }
+
+
 
   h4 {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
     line-height: 140%;
     max-width: 410px;
     min-width: 410px;
@@ -60,12 +51,7 @@
   }
 
   p {
-    font-family: 'Open Sans';
     max-width: 620px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 140%;
 
     @media (max-width: $px1024) {
       max-width: unset;
@@ -76,65 +62,37 @@
 .services__cards {
   display: flex;
   flex-direction: column;
-  margin-top: 50px;
+  margin-top: 40px;
   width: 100%;
-  left: -15px;
-  top: -10px;
-  position: relative;
-
-  @media (max-width: $px480) {
-    left: unset;
-    top: unset;
-  }
 }
 
 .services__card {
   display: flex;
-  padding: 20px 30px;
+  padding: 20px 0;
   width: 100%;
   transition: all 0.2s;
-  border-radius: 8px;
   position: relative;
+  border-radius: 8px;
 
   @media (max-width: $px768) {
     flex-direction: column;
     align-items: flex-start;
-  }
-
-  &__btn-cta {
-    display: block;
-    width: 181px;
-    height: 55px;
-    border-radius: 8px;
-    border: 1px solid #00AE31;
-    font-family: 'Alumni Sans';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 29px;
-    cursor: pointer;
-    // ГРАДИЕНТ ДЛЯ ТЕКСТА
-    background: -webkit-linear-gradient(93.58deg,
-        #00AA30 0%,
-        #00D03A 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 
     &:hover {
-      background: #FFFFFF;
-      color: #00AE31;
-      background-clip: inherit;
-      -webkit-background-clip: inherit;
-      -webkit-text-fill-color: inherit;
-      border: none;
+      background: none;
+      box-shadow: none;
     }
+  }
+
+  @media (max-width: $px480) {
+    padding: 20px 30px;
   }
 
   &:hover {
     background: #00AE31;
+    box-shadow: 30px 0px #00AE31, -30px 0px #00AE31;
 
-    .btn-bg {
+    button {
       visibility: visible;
     }
   }
@@ -155,27 +113,78 @@
   }
 }
 
-
 .services-dot1 {
   top: -8.6vh;
   right: 0.8vw;
   opacity: 0.6;
 }
 
-.btn-bg {
+.services__card__btn-cta {
   visibility: hidden;
-  background-color: #FFFFFF;
-  border-radius: 8px;
   height: 55px;
   position: relative;
+  display: block;
+  width: 181px;
+  height: 55px;
+  border-radius: 8px;
+  border: 1px solid white;
+  font-family: 'Alumni Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;
+  cursor: pointer;
+  background: none;
+  color: white;
+  transition: background 0.2s, color 0, 2s;
+  white-space: nowrap;
+  padding: 12px 24px 14px;
+  z-index: 1;
+
 
   @media (max-width: $px768) {
     visibility: visible;
-    margin-top: 40px;
+
+    background: linear-gradient(93.58deg, #00AA30 0%, #00D03A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+    &:hover {
+      background: linear-gradient(93.58deg, #00AA30 0%, #00D03A 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
   }
 
   @media (max-width: $px480) {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  &:hover {
+    background: #FFFFFF;
+    color: #00AE31;
+  }
+}
+
+.button-bg {
+  margin-left: 10px;
+
+  @media (max-width: $px768) {
+    background-color: white;
+    height: 55px;
+    border-radius: 8px;
+    margin-top: 40px;
+  }
+
+  @media (max-width: $px480) {
+    margin-left: auto;
+    ;
+    margin-right: auto;
+    ;
   }
 }

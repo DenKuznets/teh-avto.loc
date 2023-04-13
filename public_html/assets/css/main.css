@@ -591,14 +591,15 @@ body.modal-open {
 .header {
   background-color: #00110A;
   color: #fff;
-  padding: 10px 0;
   position: fixed;
+  top: 0;
   width: 100%;
   z-index: 3;
   display: flex;
 }
 
 .header__content {
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -621,7 +622,7 @@ body.modal-open {
 .header__logo-fixed {
   position: fixed;
   top: 10px;
-  left: 30px;
+  left: 20px;
 }
 
 .header__phone {
@@ -631,6 +632,7 @@ body.modal-open {
   line-height: 29px;
   transition: all 0.4s;
   white-space: nowrap;
+  transition: all 0.4s;
 }
 
 .header__phone-mobile {
@@ -660,6 +662,13 @@ footer {
 }
 
 .footer-bottom p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 140%;
+}
+.footer-bottom p a {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
@@ -726,7 +735,6 @@ footer {
 }
 
 .section {
-  min-height: 500px;
   position: relative;
   padding: 0 30px;
 }
@@ -743,13 +751,12 @@ footer {
   display: flex;
   justify-content: center;
   gap: 101px;
-  padding-top: 80px;
-  padding-bottom: 100px;
   position: relative;
+  margin-top: 80px;
 }
 
 .hero__text {
-  margin-top: 150px;
+  margin: auto 0;
   flex: 1;
   max-width: 639px;
 }
@@ -774,8 +781,10 @@ footer {
 .hero__image img {
   position: relative;
   width: 100%;
-  height: auto;
+  height: 100%;
   border-radius: 8px;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .hero-dot1 {
@@ -809,6 +818,7 @@ footer {
   max-width: 1290px;
   position: relative;
   left: -20px;
+  margin-top: 100px;
 }
 
 .advantages__card {
@@ -841,7 +851,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 90px;
+  padding: 0 60px;
 }
 #services .ellipse2 {
   left: 7%;
@@ -854,84 +864,39 @@ footer {
 
 .services__content {
   width: 100%;
-  max-width: 1350px;
-  position: relative;
-  left: 20px;
-}
-.services__content h2 {
-  font-family: "Alumni Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 58px;
-  padding-left: 15px;
+  max-width: 1290px;
+  margin-top: 90px;
 }
 .services__content h4 {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
   line-height: 140%;
   max-width: 410px;
   min-width: 410px;
   margin-right: 40px;
 }
 .services__content p {
-  font-family: "Open Sans";
   max-width: 620px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 140%;
 }
 
 .services__cards {
   display: flex;
   flex-direction: column;
-  margin-top: 50px;
+  margin-top: 40px;
   width: 100%;
-  left: -15px;
-  top: -10px;
-  position: relative;
 }
 
 .services__card {
   display: flex;
-  padding: 20px 30px;
+  padding: 20px 0;
   width: 100%;
   transition: all 0.2s;
-  border-radius: 8px;
   position: relative;
-}
-.services__card__btn-cta {
-  display: block;
-  width: 181px;
-  height: 55px;
   border-radius: 8px;
-  border: 1px solid #00AE31;
-  font-family: "Alumni Sans";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 29px;
-  cursor: pointer;
-  background: -webkit-linear-gradient(93.58deg, #00AA30 0%, #00D03A 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.services__card__btn-cta:hover {
-  background: #FFFFFF;
-  color: #00AE31;
-  background-clip: inherit;
-  -webkit-background-clip: inherit;
-  -webkit-text-fill-color: inherit;
-  border: none;
 }
 .services__card:hover {
   background: #00AE31;
+  box-shadow: 30px 0px #00AE31, -30px 0px #00AE31;
 }
-.services__card:hover .btn-bg {
+.services__card:hover button {
   visibility: visible;
 }
 
@@ -946,12 +911,35 @@ footer {
   opacity: 0.6;
 }
 
-.btn-bg {
+.services__card__btn-cta {
   visibility: hidden;
-  background-color: #FFFFFF;
-  border-radius: 8px;
   height: 55px;
   position: relative;
+  display: block;
+  width: 181px;
+  height: 55px;
+  border-radius: 8px;
+  border: 1px solid white;
+  font-family: "Alumni Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;
+  cursor: pointer;
+  background: none;
+  color: white;
+  transition: background 0.2s, color 0, 2s;
+  white-space: nowrap;
+  padding: 12px 24px 14px;
+  z-index: 1;
+}
+.services__card__btn-cta:hover {
+  background: #FFFFFF;
+  color: #00AE31;
+}
+
+.button-bg {
+  margin-left: 10px;
 }
 
 #stages {
@@ -1003,7 +991,7 @@ footer {
   min-height: unset;
 }
 #about h2 {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 #about p {
   position: relative;
@@ -1014,6 +1002,7 @@ footer {
 }
 
 .about__content {
+  margin-top: 25px;
   display: flex;
   justify-content: center;
   max-width: 1290px;
@@ -1022,13 +1011,12 @@ footer {
 
 .about__text {
   max-width: 630px;
-  margin-top: 45px;
+  margin: auto 0;
   flex: 1;
 }
 
 .about__image {
   flex: 1;
-  margin-top: 25px;
   max-width: 630px;
   display: flex;
   align-items: center;
@@ -1036,10 +1024,12 @@ footer {
 .about__image img {
   position: relative;
   width: 100%;
-  height: auto;
+  height: 100%;
   border-radius: 8px;
   -o-object-position: 0 0;
   object-position: 0 0;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .about-dot1 {
@@ -1047,13 +1037,8 @@ footer {
   left: -0.2vw;
   opacity: 0.8;
 }
-
-#certificate {
-  padding-bottom: 45px;
-}
 #certificate h2 {
-  margin-top: 90px;
-  margin-bottom: 45px;
+  margin-bottom: 40px;
 }
 #certificate .ellipse2 {
   right: 13%;
@@ -1063,6 +1048,7 @@ footer {
 .certificate__content {
   max-width: 1290px;
   margin: 0 auto;
+  margin-top: 90px;
 }
 
 .certificate__card {
@@ -1081,13 +1067,11 @@ footer {
 
 .mySwiper {
   width: 100%;
-  height: 440px;
 }
 
 #contacts {
   display: flex;
   position: relative;
-  padding-top: 45px;
   padding-bottom: 50px;
   justify-content: center;
   width: 100%;
@@ -1105,18 +1089,21 @@ footer {
   display: flex;
   max-width: 1290px;
   gap: 30px;
+  margin-top: 90px;
   width: 100%;
 }
 
+.contacts__text {
+  margin: auto 0;
+}
 .contacts__text h2 {
-  margin-top: 40px;
-  margin-bottom: 45px;
+  margin-bottom: 40px;
 }
 
 .contacts_cards {
   display: flex;
   flex-direction: column;
-  gap: 31px;
+  gap: 30px;
 }
 
 .contacts__card {
@@ -1336,16 +1323,11 @@ footer {
   .hero__content {
     gap: 20px;
   }
-  .hero__text {
-    margin-top: 93px;
-  }
   .hero__text h1 {
     margin-bottom: 32px;
   }
-  .hero__image img {
-    height: 500px;
-    -o-object-fit: cover;
-    object-fit: cover;
+  .hero__image {
+    min-height: 500px;
   }
   .advantages__cards {
     left: 0;
@@ -1375,22 +1357,8 @@ footer {
     display: flex;
     flex-direction: column;
   }
-  #about h2 {
-    margin-bottom: 40px;
-  }
   .about__content {
     margin-top: 70px;
-  }
-  .about__text {
-    margin-top: 30px;
-  }
-  .about__image {
-    height: 406px;
-  }
-  .about__image img {
-    -o-object-fit: cover;
-    object-fit: cover;
-    height: 406px;
   }
   #contacts {
     justify-content: flex-start;
@@ -1411,6 +1379,10 @@ footer {
 }
 
 @media (max-width: 850px){
+  .header {
+    position: absolute;
+    top: -80px;
+  }
   .header__phone {
     margin-right: 50px;
   }
@@ -1443,6 +1415,9 @@ footer {
   .burger-show {
     display: block;
   }
+  .mobile-menu__close-btn-active {
+    display: block;
+  }
 }
 
 @media (max-width: 768px){
@@ -1451,9 +1426,6 @@ footer {
     font-size: 60px;
     line-height: 72px;
     text-align: center;
-  }
-  .header {
-    position: relative;
   }
   .header__content {
     justify-content: flex-start;
@@ -1497,7 +1469,7 @@ footer {
     column-gap: 7%;
   }
   .section {
-    padding: 0 19px;
+    padding: 0 20px;
   }
   .hero__content {
     flex-direction: column;
@@ -1506,7 +1478,6 @@ footer {
     gap: 50px;
   }
   .hero__text {
-    margin-top: 30px;
     max-width: unset;
   }
   .hero__image {
@@ -1521,6 +1492,7 @@ footer {
     flex-direction: row;
     max-width: unset;
     width: 100%;
+    align-items: center;
   }
   .advantages__card h4 {
     width: 100%;
@@ -1534,8 +1506,29 @@ footer {
     flex-direction: column;
     align-items: flex-start;
   }
-  .btn-bg {
+  .services__card:hover {
+    background: none;
+    box-shadow: none;
+  }
+  .services__card__btn-cta {
     visibility: visible;
+    background: linear-gradient(93.58deg, #00AA30 0%, #00D03A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .services__card__btn-cta:hover {
+    background: linear-gradient(93.58deg, #00AA30 0%, #00D03A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .button-bg {
+    background-color: white;
+    height: 55px;
+    border-radius: 8px;
     margin-top: 40px;
   }
   #about {
@@ -1551,16 +1544,10 @@ footer {
   .about__image {
     max-width: unset;
     margin-top: unset;
-    height: 500px;
-  }
-  .about__image img {
-    height: 500px;
+    min-height: 500px;
   }
   #certificate {
     padding-right: 0;
-  }
-  .mobile-menu__close-btn-active {
-    display: block;
   }
 }
 
@@ -1634,18 +1621,20 @@ footer {
     top: -53px;
     left: -60px;
   }
+  #services {
+    padding: 0 20px;
+  }
   .services__content {
     text-align: center;
-    left: unset;
   }
-  .services__content h2 {
-    padding-left: unset;
+  .services__card {
+    padding: 20px 30px;
   }
-  .services__cards {
-    left: unset;
-    top: unset;
+  .services__card__btn-cta {
+    margin-left: auto;
+    margin-right: auto;
   }
-  .btn-bg {
+  .button-bg {
     margin-left: auto;
     margin-right: auto;
   }
@@ -1661,10 +1650,8 @@ footer {
   #about p {
     text-align: center;
   }
-  .about__image img {
-    height: 400px;
-    -o-object-position: 40% 0%;
-    object-position: 40% 0%;
+  .about__image {
+    min-height: 400px;
   }
   #certificate h2 {
     text-align: center;
@@ -1682,8 +1669,16 @@ footer {
 
 @media (max-width: 420px){
   .header__phone {
-    display: none;
+    position: fixed;
+    top: -40%;
+    left: 50%;
+    transform: translate(-50%);
     margin-right: 10px;
+  }
+  .header__phone-mobile {
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%);
   }
 }
 
@@ -1693,19 +1688,17 @@ footer {
     font-size: 40px;
     line-height: 48px;
   }
-  .section {
-    padding: 0 15px;
+  .hero__image {
+    min-height: 400px;
   }
-  .hero__image img {
-    height: 400px;
+  .services__content {
+    overflow-wrap: anywhere;
   }
   #stages h4 br {
     display: block;
   }
-  .about__image img {
-    height: 300px;
-    -o-object-position: 40% 0%;
-    object-position: 40% 0%;
+  .about__image {
+    min-height: 300px;
   }
   .contacts__card {
     flex-direction: column;
