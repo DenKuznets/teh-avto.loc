@@ -8,11 +8,7 @@
   }
 
   h2 {
-    margin-bottom: 50px;
-
-    @media (max-width: $px1024) {
-      margin-bottom: 40px;
-    }
+    margin-bottom: 40px;
 
     @media (max-width: $px480) {
       text-align: center;

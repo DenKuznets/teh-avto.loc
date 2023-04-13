@@ -666,6 +666,13 @@ footer {
   font-size: 15px;
   line-height: 140%;
 }
+.footer-bottom p a {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 140%;
+}
 
 .header__nav {
   display: flex;
@@ -888,7 +895,7 @@ footer {
 .services__cards {
   display: flex;
   flex-direction: column;
-  margin-top: 50px;
+  margin-top: 40px;
   width: 100%;
   left: -15px;
   top: -10px;
@@ -1003,7 +1010,7 @@ footer {
   min-height: unset;
 }
 #about h2 {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 #about p {
   position: relative;
@@ -1053,7 +1060,7 @@ footer {
 }
 #certificate h2 {
   margin-top: 90px;
-  margin-bottom: 45px;
+  margin-bottom: 40px;
 }
 #certificate .ellipse2 {
   right: 13%;
@@ -1110,13 +1117,13 @@ footer {
 
 .contacts__text h2 {
   margin-top: 40px;
-  margin-bottom: 45px;
+  margin-bottom: 40px;
 }
 
 .contacts_cards {
   display: flex;
   flex-direction: column;
-  gap: 31px;
+  gap: 30px;
 }
 
 .contacts__card {
@@ -1374,9 +1381,6 @@ footer {
   .stages__cards {
     display: flex;
     flex-direction: column;
-  }
-  #about h2 {
-    margin-bottom: 40px;
   }
   .about__content {
     margin-top: 70px;
