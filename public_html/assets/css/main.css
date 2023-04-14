@@ -593,6 +593,16 @@ body.modal-open {
   height: 100%;
 }
 
+.dot,
+.ellipse, img {
+  -ms-user-select: none;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+
 .header {
   background-color: #00110A;
   color: #fff;
