@@ -7,13 +7,9 @@
         </div>
         <div class="footer-top__nav">
             <ul class="nav nav__list-footer">
-                <li class="nav__item-footer">
-                    <a href="#about">
-                        О компании
-                    </a>
-                </li>
                 <li class="nav__item-footer"><a href="#services">Услуги</a></li>
                 <li class="nav__item-footer"><a href="#stages">Этапы работы</a></li>
+                <li class="nav__item-footer"><a href="#about">О компании</a></li>
                 <li class="nav__item-footer"><a href="#certificate">Сертификаты</a></li>
                 <li class="nav__item-footer"><a href="#contacts">Контакты</a></li>
             </ul>

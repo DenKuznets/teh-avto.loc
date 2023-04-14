@@ -8,13 +8,9 @@
             </div>
             <div class="header__nav">
                 <ul class="nav nav__list-header">
-                    <li class="nav__item-header">
-                        <a href="#about">
-                            О компании
-                        </a>
-                    </li>
                     <li class="nav__item-header"><a href="#services">Услуги</a></li>
                     <li class="nav__item-header"><a href="#stages">Этапы работы</a></li>
+                    <li class="nav__item-header"><a href="#about">О компании</a></li>
                     <li class="nav__item-header"><a href="#certificate">Сертификаты</a></li>
                     <li class="nav__item-header"><a href="#contacts">Контакты</a></li>
                 </ul>
