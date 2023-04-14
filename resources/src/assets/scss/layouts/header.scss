@@ -60,14 +60,10 @@
   transition: all 0.4s;
 
   @media (max-width: $px850) {
-    margin-right: 50px;
-  }
+    margin-right: 90px;
+  } 
 
-  @media (max-width: $px480) {
-    margin-right: 10vw;
-  }
-
-  @media (max-width: 420px) {
+  @media (max-width: 470px) {
     position: fixed;
     top: -40%;
     left: 50%;

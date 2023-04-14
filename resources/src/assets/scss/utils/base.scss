@@ -58,6 +58,7 @@ button {
     position: relative;
 }
 
+
 h1 {
     font-style: normal;
     font-weight: 700;
@@ -98,6 +99,8 @@ h2 {
     font-size: 48px;
     line-height: 58px;
     letter-spacing: 0.7px;
+    z-index: 1;
+    position: relative;
 }
 
 h4 {
@@ -162,11 +165,8 @@ a {
     animation-duration: .8s;
 }
 
-.dot {
-    position: absolute;
-}
-
 .mask {
+    z-index: 0;
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -189,6 +189,7 @@ a {
 }
 
 .ellipse {
+    z-index: 0;
     position: absolute;
     width: 300px;
     height: 300px;
@@ -207,6 +208,7 @@ a {
 
 
 .dot {
+    z-index: 0;
     position: absolute;
 
     @media (max-width: $px1024) {

@@ -19,7 +19,8 @@
   justify-content: center;
   gap: 101px;
   position: relative;
-  margin-top: 80px;
+  // margin-top: 80px;
+  padding-top: 80px;
 
   @media (max-width: $px1024) {
     gap: 20px;
