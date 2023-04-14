@@ -15,7 +15,7 @@
                 <label>Согласен на обработку персональный данных</label>
             </div>
             <div class="modal-button">
-                <button class="modal-form-button" id="sendMail" disabled>Оставить заявку</button>
+                <button class="btn btn-cta" id="sendMail" disabled>Оставить заявку</button>
             </div>
         </form>
     </div>

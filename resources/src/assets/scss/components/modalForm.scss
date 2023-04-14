@@ -22,7 +22,7 @@
     right: 0;
     left: 0;
     padding: 70px;
-    max-width: 900px; /* Может быть больше или меньше, в зависимости от размера экрана */
+    max-width: 740px; /* Может быть больше или меньше, в зависимости от размера экрана */
     min-width: 200px;
 
     @media (max-width: 1024px) {
@@ -63,13 +63,11 @@
 
 .modal {
     &-title {
-        font-family: 'NEXT ART';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 36px;
-        line-height: 140%;
+        font-family: 'Alumni Sans';
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 58px;
         text-align: center;
-        text-transform: uppercase;
         color: #0A001C;
 
         @media (max-width: 560px) {
@@ -83,13 +81,17 @@
 
     &-text {
         margin: 36px auto 0 auto;
-        max-width: 509px;
-        font-family: 'PT Sans';
+        font-family: 'Open Sans';
         font-style: normal;
-        font-weight: 500;
+        font-weight: 400;
         font-size: 17px;
-        line-height: 160%;
+        line-height: 140%;
+        /* or 24px */
+
         text-align: center;
+
+        /* Текст */
+
         color: #0A001C;
 
         @media (max-width: 480px) {
@@ -143,7 +145,17 @@
 
 .modal-checkbox {
     display: flex;
+    align-items: center;
     column-gap: 15px;
+
+    label {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 140%;
+        color: #0A001C;
+    }
 }
 
 .error-input {

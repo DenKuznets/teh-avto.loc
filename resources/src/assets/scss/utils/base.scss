@@ -236,6 +236,11 @@ a {
     &:hover {
         background: linear-gradient(273.58deg, #008024 0%, #00AE31 100%);
     }
+
+    &:disabled {
+        background: #AEC4B4;
+        cursor: unset;
+    }
 }
 
 body.modal-open {

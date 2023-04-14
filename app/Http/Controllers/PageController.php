@@ -21,12 +21,12 @@ class PageController extends Controller
         $mail->name = $request->name;
         $mail->phone = $request->phone;
 
-        if (Mail::to('slobodchikov1985@yandex.ru')->send(new ContactsForm($mail))) {
+        if (Mail::to('autohopenn@yandex.ru')->send(new ContactsForm($mail))) {
             $validated = $request->validate([
                 'name' => 'required|max:50',
                 'phone' => 'required',
             ]);
-            Contact::create($validated);
+//            Contact::create($validated);
             return response()->json($request);
         } else {
             return response()->json(["answer" => "error"]);

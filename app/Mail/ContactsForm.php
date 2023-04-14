@@ -31,6 +31,6 @@ class ContactsForm extends Mailable
      */
     public function build()
     {
-        return $this->from('info@alex-media.ru')->subject("Сообщение с сайта kvadro-isk.ru")->view('mail.contacts-form');
+        return $this->from('info@alex-media.ru')->subject("Сообщение с сайта avtodom-techauto.ru")->view('mail.contacts-form');
     }
 }

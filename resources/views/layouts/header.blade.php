@@ -2,7 +2,7 @@
     <div class="containers header">
         <div class="header__content">
             <div class="header__logo">
-                <a href="#">
+                <a href="{{ route('index') }}">
                     <img src="{{ asset('assets/img/logo.svg') }}" alt="">
                 </a>
             </div>
@@ -10,7 +10,11 @@
                 <ul class="nav nav__list-header">
                     <li class="nav__item-header"><a href="#services">Услуги</a></li>
                     <li class="nav__item-header"><a href="#stages">Этапы работы</a></li>
-                    <li class="nav__item-header"><a href="#about">О компании</a></li>
+                    <li class="nav__item-header">
+                        <a href="#about">
+                            О компании
+                        </a>
+                    </li>
                     <li class="nav__item-header"><a href="#certificate">Сертификаты</a></li>
                     <li class="nav__item-header"><a href="#contacts">Контакты</a></li>
                 </ul>

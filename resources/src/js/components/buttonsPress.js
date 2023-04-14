@@ -1,38 +1,3 @@
-
-
-// нажатие кнопки Оставить заявку на главной
-const heroBtn = document.getElementById("hero-btn");
-heroBtn.addEventListener("click", openPopup);
-
-// нажатие кнопки оставить заявку в Услугах
-const servBtns = document.querySelectorAll(".services__card__btn-cta");
-for (let btn of servBtns) {
-    btn.addEventListener("click", openPopup);
-}
-
-// закрытие попапа по кнопке
-const popupBtn = document.getElementById("popup__close-btn");
-popupBtn.addEventListener("click", closePopup);
-
-// закрытие попапа по клику мимо
-document.getElementById("popup").addEventListener("click", function (e) {
-    if (e.target.classList.contains("popup")) {
-        closePopup();
-    }
-});
-
-// открытие попапа
-function openPopup() {
-    document.getElementById("popup").classList.add("popup-show");
-    document.body.classList.toggle("modal-open");
-}
-
-// закрыть попап
-function closePopup() {
-    document.getElementById("popup").classList.remove("popup-show");
-    document.body.classList.toggle("modal-open");
-}
-
 // бургер нажатие
 const burger = document.querySelector(".burger");
 const closeBtn = document.querySelector(".mobile-menu__close-btn");

@@ -1,0 +1,25 @@
+#politics {
+    background: #ffffff;
+    padding-top: 90px;
+    margin-top: 20px;
+}
+
+.politics {
+    padding-bottom: 70px;
+    max-width: 1290px;
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        margin-top: 50px;
+
+        p {
+            color: #0A001C;;
+        }
+    }
+
+    &__title {
+        text-align: center;
+        color: #0A001C;
+    }
+}
