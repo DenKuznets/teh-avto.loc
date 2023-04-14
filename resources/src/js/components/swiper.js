@@ -30,22 +30,17 @@ if (document.querySelector(".mySwiper")) {
         breakpoints: {
             1290: {
                 slidesPerView: 4,
-                spaceBetween: 30,
             },
             780: {
                 slidesPerView: 3,
-                spaceBetween: 50,
             },
             600: {
                 slidesPerView: 2.4,
-                spaceBetween: 50,
             },
             450: {
                 slidesPerView: 1.5,
-                spaceBetween: 50,
             },
             359: {
-                spaceBetween: 50,
                 slidesPerView: 1.2,
             },
             1: {

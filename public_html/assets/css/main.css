@@ -1476,7 +1476,6 @@ footer {
 @media (max-width: 850px){
   .header {
     position: absolute;
-    top: -80px;
   }
   .header__phone {
     margin-right: 90px;
