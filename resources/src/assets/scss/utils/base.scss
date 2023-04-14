@@ -167,8 +167,14 @@ a {
 
 .mask {
     z-index: 0;
-    background-size: 100%;
+    background-size: 1920px;    
     background-repeat: no-repeat;
+    @media (max-width: $px1024) {
+        background: none;
+    }
+    @media (min-width: 1921px) {
+        background-size: 100%;
+    }
 }
 
 .mask1 {
@@ -177,15 +183,13 @@ a {
 
 .mask2 {
     background-image: url(/assets/img/masks/mask2.svg);
-    background-position: 0% 72%;
-    // background-origin: ;
-    // outline: 1px solid red;
+    background-position: 50% 72%;
+
 }
 
 .mask3 {
     background-image: url(/assets/img/masks/mask3.svg);
-    background-position: 0% 101%;
-    // outline: 1px solid red;
+    background-position: 50% 101%;
 }
 
 .ellipse {

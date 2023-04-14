@@ -512,7 +512,7 @@ a:hover {
 
 .mask {
   z-index: 0;
-  background-size: 100%;
+  background-size: 1920px;
   background-repeat: no-repeat;
 }
 
@@ -522,12 +522,12 @@ a:hover {
 
 .mask2 {
   background-image: url(/assets/img/masks/mask2.svg);
-  background-position: 0% 72%;
+  background-position: 50% 72%;
 }
 
 .mask3 {
   background-image: url(/assets/img/masks/mask3.svg);
-  background-position: 0% 101%;
+  background-position: 50% 101%;
 }
 
 .ellipse {
@@ -1384,6 +1384,11 @@ footer {
   height: 30px;
   max-width: unset;
 }
+@media (min-width: 1921px){
+  .mask {
+    background-size: 100%;
+  }
+}
 @media (max-width: 1460px){
   .containers {
     padding-right: 30px;
@@ -1406,6 +1411,9 @@ footer {
     font-weight: 700;
     font-size: 40px;
     line-height: 48px;
+  }
+  .mask {
+    background: none;
   }
   .dot {
     display: none;
