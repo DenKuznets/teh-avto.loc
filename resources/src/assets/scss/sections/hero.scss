@@ -19,7 +19,6 @@
   justify-content: center;
   gap: 101px;
   position: relative;
-  // margin-top: 80px;
   padding-top: 80px;
 
   @media (max-width: $px1024) {
@@ -40,8 +39,7 @@
   flex: 1;
   max-width: 639px;
 
-  @media (max-width: $px1024) {
-  }
+  @media (max-width: $px1024) {}
 
   @media (max-width: $px768) {
     max-width: unset;
@@ -76,6 +74,7 @@
   @media (max-width: $px1024) {
     min-height: 500px;
   }
+
   @media (max-width: $px768) {
     width: 100%;
     max-width: unset;
@@ -96,26 +95,21 @@
 }
 
 .hero-dot1 {
-  right: 3.9vw;
+  left: calc(50% - -522px);
+  transform: translate(-50%);
   top: 0vh;
   opacity: 0.7;
 }
 
 .hero-dot2 {
-  left: 0vw;
+  left: calc(50% - 756px);
+  transform: translate(-50%);
   top: 33vh;
   opacity: 0.2;
 }
 
 .hero-dot3 {
-  left: 11.5vw;
+  left: calc(50% - 476px);
+  transform: translate(-50%);
   top: 0vh;
-
-  @media (max-width: 1450px) {
-    left: 4%;
-  }
-
-  @media (max-width: 1320px) {
-    display: none;
-  }
 }

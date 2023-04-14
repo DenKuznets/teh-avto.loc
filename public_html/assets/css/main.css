@@ -803,19 +803,22 @@ footer {
 }
 
 .hero-dot1 {
-  right: 3.9vw;
+  left: calc(50% + 522px);
+  transform: translate(-50%);
   top: 0vh;
   opacity: 0.7;
 }
 
 .hero-dot2 {
-  left: 0vw;
+  left: calc(50% - 756px);
+  transform: translate(-50%);
   top: 33vh;
   opacity: 0.2;
 }
 
 .hero-dot3 {
-  left: 11.5vw;
+  left: calc(50% - 476px);
+  transform: translate(-50%);
   top: 0vh;
 }
 
@@ -922,7 +925,8 @@ footer {
 
 .services-dot1 {
   top: -8.6vh;
-  right: 0.8vw;
+  left: calc(50% + 795px);
+  transform: translate(-50%);
   opacity: 0.6;
 }
 
@@ -1048,8 +1052,9 @@ footer {
 }
 
 .about-dot1 {
-  top: 12vh;
-  left: -0.2vw;
+  top: 9.6vh;
+  left: calc(50% - 720px);
+  transform: translate(-50%);
   opacity: 0.8;
 }
 #certificate h2 {
@@ -1166,8 +1171,9 @@ footer {
 }
 
 .contacts-dot1 {
-  right: -0.2vw;
-  top: -5.3vh;
+  left: calc(50% + 672px);
+  transform: translate(-50%);
+  top: -1.3vh;
   opacity: 0.8;
 }
 
@@ -1388,16 +1394,6 @@ footer {
   .containers {
     padding-right: 20px;
     padding-left: 20px;
-  }
-}
-@media (max-width: 1450px){
-  .hero-dot3 {
-    left: 4%;
-  }
-}
-@media (max-width: 1320px){
-  .hero-dot3 {
-    display: none;
   }
 }
 @media (max-width: 1160px){

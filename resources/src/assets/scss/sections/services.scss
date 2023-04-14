@@ -115,7 +115,8 @@
 
 .services-dot1 {
   top: -8.6vh;
-  right: 0.8vw;
+  left: calc(50% - -795px);
+  transform: translate(-50%);
   opacity: 0.6;
 }
 

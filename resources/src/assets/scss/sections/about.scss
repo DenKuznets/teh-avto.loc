@@ -97,7 +97,8 @@
 }
 
 .about-dot1 {
-  top: 12vh;
-  left: -0.2vw;
+  top: 9.6vh;
+  left: calc(50% + -720px);
+  transform: translate(-50%);
   opacity: 0.8;
 }

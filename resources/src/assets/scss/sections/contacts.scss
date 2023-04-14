@@ -36,6 +36,7 @@
 
 .contacts__text {
   margin: auto 0;
+
   h2 {
     margin-bottom: 40px;
 
@@ -126,8 +127,9 @@
 }
 
 .contacts-dot1 {
-  right: -0.2vw;
-  top: -5.3vh;
+  left: calc(50% - -672px);
+  transform: translate(-50%);
+  top: -1.3vh;
   opacity: 0.8;
 }
 
