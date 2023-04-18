@@ -5,7 +5,7 @@
   <div class="services__content">
     <h2>Услуги</h2>
     <div class="services__cards">
-      <div class="services__card">
+      <div class="animate__animated services__card">
         <div class="services__card-text">
           <h4>Выдача документов на переоборудование любых транспортных средств</h4>
           <p>Автодома, эвакуаторы, ритуальные, грузовые, европлатформытентованные, прицепы Автодома,
@@ -19,7 +19,7 @@
           <button id="popAp" class="services__card__btn-cta">Оставить заявку</button>
         </div>
       </div>
-      <div class="services__card">
+      <div class="animate__animated services__card">
         <div class="services__card-text">
           <h4>Оформление документов на любые виды переоборудования в ГИБДД</h4>
           <p>Получение Предварительного заключения, получение Разрешения в ГИБДД по Нижегородской
@@ -33,7 +33,7 @@
           <button id="popAp" class="services__card__btn-cta">Оставить заявку</button>
         </div>
       </div>
-      <div class="services__card">
+      <div class="animate__animated services__card">
         <div class="services__card-text">
           <h4>Переоборудование <br> автомобилей</h4>
           <p>Переоборудование легковых автомобилей, микроавтобусов, грузовых, Установка ГБО, АКПП,
@@ -44,7 +44,7 @@
           <button id="popAp" class="services__card__btn-cta">Оставить заявку</button>
         </div>
       </div>
-      <div class="services__card">
+      <div class="animate__animated services__card">
         <div class="services__card-text">
           <h4>Установка доп.оборудования (тюнинг)</h4>
           <p>Мы готовы предложить вам не только широкий ассортимент запчастей, но также

@@ -4,7 +4,7 @@
   <div class="ellipse ellipse3"></div>
 
   <div class="contacts__content">
-    <div class="contacts__text">
+    <div class="animate__animated contacts__text">
       <h2>Контакты</h2>
       <div class="contacts_cards">
         <div class="contacts__card">
@@ -51,7 +51,7 @@
         </a>
       </div>
     </div>
-    <div class="contacts__map">
+    <div class="animate__animated contacts__map">
       <div id="ymaps"></div>
     </div>
   </div>

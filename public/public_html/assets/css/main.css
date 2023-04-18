@@ -457,6 +457,8 @@ h2 {
   font-size: 48px;
   line-height: 58px;
   letter-spacing: 0.7px;
+  z-index: 1;
+  position: relative;
 }
 
 h4 {
@@ -508,12 +510,9 @@ a:hover {
   animation-duration: 0.8s;
 }
 
-.dot {
-  position: absolute;
-}
-
 .mask {
-  background-size: 100%;
+  z-index: 0;
+  background-size: 1920px;
   background-repeat: no-repeat;
 }
 
@@ -523,15 +522,16 @@ a:hover {
 
 .mask2 {
   background-image: url(/assets/img/masks/mask2.svg);
-  background-position: 0% 72%;
+  background-position: 50% 72%;
 }
 
 .mask3 {
   background-image: url(/assets/img/masks/mask3.svg);
-  background-position: 0% 101%;
+  background-position: 50% 101%;
 }
 
 .ellipse {
+  z-index: 0;
   position: absolute;
   width: 300px;
   height: 300px;
@@ -549,6 +549,7 @@ a:hover {
 }
 
 .dot {
+  z-index: 0;
   position: absolute;
 }
 
@@ -590,6 +591,16 @@ body.modal-open {
   justify-content: center;
   align-items: center;
   height: 100%;
+}
+
+.dot,
+.ellipse, img {
+  -ms-user-select: none;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
 }
 
 .header {
@@ -756,7 +767,7 @@ footer {
   justify-content: center;
   gap: 101px;
   position: relative;
-  margin-top: 80px;
+  padding-top: 80px;
 }
 
 .hero__text {
@@ -792,19 +803,22 @@ footer {
 }
 
 .hero-dot1 {
-  right: 3.9vw;
+  left: calc(50% + 522px);
+  transform: translate(-50%);
   top: 0vh;
   opacity: 0.7;
 }
 
 .hero-dot2 {
-  left: 0vw;
+  left: calc(50% - 756px);
+  transform: translate(-50%);
   top: 33vh;
   opacity: 0.2;
 }
 
 .hero-dot3 {
-  left: 11.5vw;
+  left: calc(50% - 476px);
+  transform: translate(-50%);
   top: 0vh;
 }
 
@@ -911,7 +925,8 @@ footer {
 
 .services-dot1 {
   top: -8.6vh;
-  right: 0.8vw;
+  left: calc(50% + 795px);
+  transform: translate(-50%);
   opacity: 0.6;
 }
 
@@ -1037,8 +1052,9 @@ footer {
 }
 
 .about-dot1 {
-  top: 12vh;
-  left: -0.2vw;
+  top: 9.6vh;
+  left: calc(50% - 720px);
+  transform: translate(-50%);
   opacity: 0.8;
 }
 #certificate h2 {
@@ -1155,8 +1171,9 @@ footer {
 }
 
 .contacts-dot1 {
-  right: -0.2vw;
-  top: -5.3vh;
+  left: calc(50% + 672px);
+  transform: translate(-50%);
+  top: -1.3vh;
   opacity: 0.8;
 }
 
@@ -1367,6 +1384,11 @@ footer {
   height: 30px;
   max-width: unset;
 }
+@media (min-width: 1921px){
+  .mask {
+    background-size: 100%;
+  }
+}
 @media (max-width: 1460px){
   .containers {
     padding-right: 30px;
@@ -1379,16 +1401,6 @@ footer {
     padding-left: 20px;
   }
 }
-@media (max-width: 1450px){
-  .hero-dot3 {
-    left: 4%;
-  }
-}
-@media (max-width: 1320px){
-  .hero-dot3 {
-    display: none;
-  }
-}
 @media (max-width: 1160px){
   .contacts__map {
     width: 600px;
@@ -1399,6 +1411,9 @@ footer {
     font-weight: 700;
     font-size: 40px;
     line-height: 48px;
+  }
+  .mask {
+    background: none;
   }
   .dot {
     display: none;
@@ -1475,10 +1490,9 @@ footer {
 @media (max-width: 850px){
   .header {
     position: absolute;
-    top: -80px;
   }
   .header__phone {
-    margin-right: 50px;
+    margin-right: 90px;
   }
   .nav__list-header {
     max-height: 0;
@@ -1662,9 +1676,6 @@ footer {
     line-height: 72px;
     text-align: center;
   }
-  .header__phone {
-    margin-right: 10vw;
-  }
   .footer-top__logo-container {
     left: 50%;
     transform: translate(-50%);
@@ -1763,7 +1774,7 @@ footer {
     max-width: 100%;
   }
 }
-@media (max-width: 420px){
+@media (max-width: 470px){
   .header__phone {
     position: fixed;
     top: -40%;
@@ -1771,6 +1782,8 @@ footer {
     transform: translate(-50%);
     margin-right: 10px;
   }
+}
+@media (max-width: 420px){
   .header__phone-mobile {
     left: 50%;
     top: 90%;
